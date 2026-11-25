@@ -4,6 +4,9 @@
 
 ### Añadido
 
+- Borrador castellano TeX v3, PDF de trabajo, checkpoint recuperable y
+  recuentos de cobertura y revisión automática.
+
 - Glosario castellano y proceso de traducción TeX por lotes con puntos
   de control recuperables, marcas de revisión y validaciones de preservación.
 

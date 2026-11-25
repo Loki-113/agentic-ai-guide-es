@@ -13,13 +13,16 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "original/source-v3/book.tex"
 DEST = ROOT / "translation/source-v3-es"
 GLOSSARY = ROOT / "translation/glossary/v3-en-es.tsv"
+BIBLIOGRAPHY = SOURCE.with_name("references.bib")
 COMMAND = re.compile(r"\\(?:[A-Za-z@]+\*?|[^\n])")
 SPECIAL = re.compile(r"[\\$%{}\[\]&~_^#\n]")
 LETTER = re.compile(r"[A-Za-z]")
 NAME = re.compile(
     r"\b(?:Haggai Roitman|Dafna Sheinwald|Guardian Angel System|Guardian Angel|"
     r"Creative Commons Attribution-ShareAlike|Model Context Protocol|Agent-to-Agent|"
-    r"California SB 942|EU AI Act|Hugging Face|Google DeepMind|FrontierMath|"
+    r"California SB 942|EU AI Act|Hugging Face|Google DeepMind|DeepMind|FrontierMath|"
+    r"Peter Szolovits|John Doyle|William Long|Isaac Kohane|Stephen Pauker|Tobi Lütke|"
+    r"OpenRouter|Perplexity|Shopify|Databricks|Cohere|Salesforce|Cloudflare|"
     r"PyTorch|TensorFlow|GitHub|OpenAI|Anthropic|DeepSeek|Microsoft|NVIDIA|"
     r"Google|Meta|Amazon|Qwen|Llama|Gemini|Claude|Mistral|LangChain|LangGraph|"
     r"Qdrant|Redis|Docker|Ollama|Python|BibTeX|LaTeX|Transformer|"
@@ -194,14 +197,27 @@ def terms():
     return dict(line.split("\t") for line in GLOSSARY.read_text().splitlines()[1:])
 
 
+def named_entities():
+    authors = set()
+    for entry in re.findall(r"(?m)^\s*author\s*=\s*\{([^{}]+)\}", BIBLIOGRAPHY.read_text()):
+        for author in entry.split(" and "):
+            family, comma, given = author.partition(", ")
+            if comma and all(part and all(c.isalpha() or c in " -.’'" for c in part) for part in (given, family)):
+                authors.add(re.escape(f"{given} {family}"))
+    if not authors:
+        return NAME
+    return re.compile(r"\b(?:" + "|".join(sorted(authors, key=lambda name: (-len(name), name))) + r")\b|" + NAME.pattern)
+
+
 def units(text):
     """Split editable spans at preserved names and technical identifiers."""
+    entities = named_entities()
     for start, end, kind in source_spans(text):
         if kind != "text":
             yield start, end, kind
             continue
         pos = start
-        for match in NAME.finditer(text, start, end):
+        for match in entities.finditer(text, start, end):
             if pos < match.start():
                 yield pos, match.start(), "text"
             yield match.start(), match.end(), "name"
@@ -247,7 +263,7 @@ def main():
     db = sqlite3.connect(args.checkpoint)
     db.execute("CREATE TABLE IF NOT EXISTS translations (source TEXT PRIMARY KEY, target TEXT, issue TEXT)")
     db.execute("CREATE TABLE IF NOT EXISTS metadata (id INTEGER PRIMARY KEY, signature TEXT NOT NULL)")
-    identity = ":".join(digest(p) for p in (SOURCE, GLOSSARY, Path(__file__), args.model / "model/model.bin", args.model / "sentencepiece.model"))
+    identity = ":".join(digest(p) for p in (SOURCE, GLOSSARY, Path(__file__), args.model / "model/model.bin", args.model / "sentencepiece.model", BIBLIOGRAPHY))
     previous = db.execute("SELECT signature FROM metadata WHERE id=1").fetchone()
     if previous and previous[0] != identity:
         raise SystemExit("El checkpoint corresponde a otra versión de la fuente, modelo o configuración.")
@@ -318,7 +334,11 @@ def main():
             counts[kind] += 1
         chunks.append(result)
         line += original.count("\n")
-    translated = "".join(chunks)
+    translated = "".join(chunks).replace(
+        r"{\normalsize Versión 1.4\par}",
+        r"{\normalsize Versión 1.4 (traducción automática de trabajo)\par}",
+        1,
+    )
     assert translated.count("\n") == text.count("\n")
     assert [(text[a:b], k) for a, b, k in source_spans(text) if k != "text"] == [
         (translated[a:b], k) for a, b, k in source_spans(translated) if k != "text"

@@ -45,3 +45,6 @@ check-source:
 
 check-translation:
 	python3 scripts/check-translation-v3.py
+	@if [ -f translation/source-v3-es/SHA256SUMS ]; then \
+		cd translation/source-v3-es && sha256sum --strict --quiet --check SHA256SUMS; \
+	fi

@@ -1,15 +1,15 @@
 {
-  "changed_words": 62442,
-  "checkpoint_segments": 9600,
+  "changed_words": 164312,
+  "checkpoint_segments": 22826,
   "code": 1272,
   "code_blocks": 206,
-  "editable_words": 167766,
+  "editable_words": 167731,
   "math": 4294,
   "model_sha256": "d5771f823c9dd7eedcf9367c116aede65613a194f761a81826351e2bccb194c4",
-  "name": 9201,
-  "processed_words": 64397,
+  "name": 9226,
+  "processed_words": 167731,
   "protected": 3567,
   "source_sha256": "c46a8e7a32704c54b057357ea9242ede76bb3525f3de0a60b81f278e64aeb586",
   "syntax": 70524,
-  "todo_review": 22602
+  "todo_review": 13266
 }
