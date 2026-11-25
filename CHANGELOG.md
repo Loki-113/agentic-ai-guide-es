@@ -23,6 +23,9 @@
 
 ### Actualizado
 
+- Preparación de publicación v3.1 con licencia oficial, atribución en
+  PDF y EPUB, inventario de derechos y auditoría de privacidad.
+
 - Revisión automática del borrador v3 con correcciones de tokenización y
   terminología, marcas priorizadas y PDF recompilado.
 

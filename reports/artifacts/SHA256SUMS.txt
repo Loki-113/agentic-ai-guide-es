@@ -1,3 +1,3 @@
-aa0be19fe9abea247af3e20db07973bd50b77eb4a61048640aa3680d3f43a225  reports/artifacts/agentic-ai-guide-es-v3-review.pdf
-78abf2da8ce586898bdb8d095c403a425ef6d23967eaa91b4789ef2012f7b75c  reports/artifacts/agentic-ai-guide-es-v3-review.epub
+33d105d55ae87c32abdb036c83dcaf1b0c9c6accb7242949a41aea8fb060ed36  reports/artifacts/agentic-ai-guide-es-v3-review.pdf
+517e14c5fc42f4398072c30ecd43e75aac2bf00cf46956482a888d6f07bc4e23  reports/artifacts/agentic-ai-guide-es-v3-review.epub
 8db078734a57b80a456922e427107fba9de5dec75bf68296ac6d252c2d75f4d8  translation/source-v3-es/book.tex

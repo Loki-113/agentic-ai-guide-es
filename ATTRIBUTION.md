@@ -1,20 +1,22 @@
-# Atribución y procedencia
+# Atribución y licencia
 
-La ficha de la obra fuente está pendiente de verificación. AGENTIC AI
-es el nombre del proyecto editorial. El título bibliográfico, la
-autoría, la edición y sus términos de uso se registrarán con evidencia
-documental antes de incorporar material de la obra.
-
-| Campo de la ficha | Estado |
+| Campo | Identificación |
 | --- | --- |
-| Título, autores, editorial y año | Pendiente de confirmación |
-| Edición, idioma e identificador bibliográfico | Pendiente de confirmación |
-| URL oficial o referencia de adquisición | Pendiente de confirmación |
-| Licencia o permiso de traducción y distribución | Pendiente de confirmación |
-| Forma de atribución exigida por los titulares | Pendiente de confirmación |
+| Autor original | Haggai Roitman |
+| Título original | The Hitchhiker’s Guide to Agentic AI: From Foundations to Systems |
+| Referencia | arXiv:2606.24937v3, edición 1.4, 29 de septiembre de 2026 |
+| Original | [Ficha y fuente oficial](https://arxiv.org/abs/2606.24937v3) |
+| Licencia de la obra y de la traducción | [CC BY-SA 4.0 Internacional](https://creativecommons.org/licenses/by-sa/4.0/) |
+| Adaptación castellana | Proyecto AGENTIC AI, versión v3.1, [repositorio español](https://github.com/Loki-113/agentic-ai-guide-es) |
 
-Por cada figura, tabla, diagrama o fragmento de código de terceros,
-registra su identificador, localizador en la fuente, titular, licencia
-o permiso, crédito requerido y modificaciones. Si el permiso es
-privado, conserva la evidencia en el lugar autorizado y registra aquí
-una referencia que pueda compartirse.
+Esta es una traducción no oficial al castellano de la obra de Haggai
+Roitman. No ha sido revisada ni aprobada por el autor original. La
+traducción tampoco implica su respaldo.
+
+La adaptación modifica el idioma, incorpora una revisión del borrador
+automático y adapta el formato a PDF y EPUB. Se distribuye bajo CC BY-SA
+4.0 con atribución, indicación de cambios y CompartirIgual. Los recursos
+de terceros conservan sus propias condiciones. El código complementario
+del autor se referencia según su licencia MIT en el commit auditado.
+
+[Texto completo de la licencia](LICENSE) · [Auditoría de derechos](reports/rights-audit.md)
