@@ -1,8 +1,8 @@
 # Auditoría técnica de la fuente
 
-Consulta del 25 de noviembre de 2026. Se revisaron fichas, cabeceras
+Consulta inicial del 25 de noviembre de 2026. Se revisaron fichas, cabeceras
 HTTP, fragmentos acotados del HTML y metadatos Git. El inventario
-interno del paquete TeX y las pruebas de compilación quedan pendientes.
+interno y la compilación se documentan en la sección de preparación local.
 
 ## Identificación del original
 
@@ -111,3 +111,53 @@ Registrar la edición v3 y sus condiciones en la ficha de atribución
 del proyecto. Cuando se autorice la adquisición, cotejar las huellas,
 inventariar el paquete TeX, revisar los créditos por recurso y
 documentar la correspondencia entre el código y los capítulos.
+
+## Preparación local de la fuente v3
+
+Descarga desde la [fuente TeX versionada](https://arxiv.org/src/2606.24937v3)
+el 25 de noviembre de 2026. La respuesta GET anuncia el mismo ETag
+`sha256:677362882e2a178559dafa3bcdfff97bf9260a7736578e3ca587f27a6b1df34f`
+que constaba en la auditoría. El archivo recibido tiene 5 568 123 bytes
+y su SHA-256 calculado es
+`fa00483a0fed61c39b1a060cca15a17b7dab0bf97cd77e510ad52a8d485758b6`.
+Cinco descargas, incluidas las variantes en [export.arxiv.org](https://export.arxiv.org/src/2606.24937v3)
+y [e-print](https://arxiv.org/e-print/2606.24937v3), devolvieron el
+mismo hash calculado. El TAR descomprimido tiene SHA-256
+`47b09790a27218734f8df784dba693d26852da857d5b564369dbddc827ff96f2`.
+El ETag se conserva como metadato HTTP y no se interpreta como
+SHA-256 verificable del paquete. El cotejo ETag/SHA-256 queda
+registrado como discrepancia no bloqueante, sin calificación PASS.
+
+**Fuente oficial reproducible; hash local registrado; ETag no
+equivalente a SHA-256**.
+
+Se extrajo el paquete en `original/source-v3/`. Se comprobó que todas
+las rutas fueran relativas y que los miembros fueran archivos
+regulares o directorios. El manifiesto de
+arXiv identifica `book.tex` como entrada y declara pdfLaTeX y TeX
+Live 2025. La portada del TeX indica la versión 1.4.
+
+### Inventario local
+
+Los [73 archivos, componentes y recuentos](../original/source-v3/INVENTORY.md)
+se documentan junto a la fuente y su manifiesto SHA-256 por archivo.
+
+### Prueba de compilación
+
+La compilación con BibTeX y pdfLaTeX terminó con código 0 y produjo
+un PDF de 733 páginas. Se registraron dos incidencias no bloqueantes.
+
+- LaTeX notificó 26 referencias duplicadas.
+- BibTeX notificó 2 campos bibliográficos vacíos.
+
+El PDF generado se conservó fuera de la copia de trabajo.
+
+Se utilizó `latexmk -norc -pdf` con pdfLaTeX de TeX Live
+2025/dev/Debian, modo no interactivo y `-no-shell-escape`, con
+salidas fuera del árbol de la fuente. El manifiesto declara TeX
+Live 2025. Se conservaron los archivos de entrada byte por byte.
+
+La auditoría queda cerrada con esta clasificación. `make check`
+coteja la copia local con el manifiesto por archivo y conserva los
+espacios en blanco del TeX original. La revisión de derechos por recurso sigue pendiente
+antes de la redistribución editorial.
