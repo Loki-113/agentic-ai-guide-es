@@ -23,6 +23,9 @@
 
 ### Actualizado
 
+- Revisión automática del borrador v3 con correcciones de tokenización y
+  terminología, marcas priorizadas y PDF recompilado.
+
 - Cierre de la auditoría v3 con el ETag, el SHA-256 local y el resultado
   de compilación, incluidas las incidencias no bloqueantes.
 

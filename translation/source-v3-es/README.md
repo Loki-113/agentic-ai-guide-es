@@ -30,6 +30,7 @@ descomprimida fuera del repositorio.
 gzip -dc translation/source-v3-es/checkpoint.sqlite.gz > /ruta/checkpoint.sqlite
 python scripts/translate-v3.py /ruta/en_es /ruta/checkpoint.sqlite --blocks 10
 python scripts/translate-v3.py /ruta/en_es /ruta/checkpoint.sqlite
+python scripts/apply-review-v3.py
 make check
 ```
 
@@ -45,5 +46,6 @@ directorio, compila con
 - [Fuente traducida](book.tex)
 - [Glosario inicial](../glossary/v3-en-es.tsv)
 - [Marcas de revisión](TODO-REVIEW.tsv)
-- [Informe de compilación y cobertura](BUILD.md)
+- [Informe de revisión automática](../../reports/review-report.md)
+- [Informe de la primera traducción automática](BUILD.md)
 - [Hashes SHA-256](SHA256SUMS)

@@ -1,4 +1,8 @@
-# Compilación y cobertura del borrador v3
+# Compilación y cobertura de la primera traducción v3
+
+Este informe registra la primera traducción automática. La versión
+revisada y sus validaciones se describen en el
+[informe de revisión](../../reports/review-report.md).
 
 | Métrica | Resultado |
 | --- | --- |
@@ -37,4 +41,4 @@ avisos de maquetación, especialmente en tablas anchas.
 Se utilizó Argos inglés–español 1.0 local con CTranslate2 4.9.1.
 El PDF se compiló con latexmk 4.86, pdfLaTeX de TeX Live
 2025/dev/Debian, BibTeX y `-no-shell-escape`. Los hashes de
-la versión entregada figuran en [SHA256SUMS](SHA256SUMS).
+la versión revisada figuran en [SHA256SUMS](SHA256SUMS).

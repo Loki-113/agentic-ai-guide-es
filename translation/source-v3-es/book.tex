@@ -261,7 +261,7 @@ Lo que hace 2024--2026 notable es que estos hilos finalmente han convergedo. LLM
 \section*{El paisaje en 2026}
 \label{the-landscape-in-2026}
 
-El viaje a la actualidad de la agente AI sistemas abarca tres décadas de avances en la arquitectura, la capacitación y el despliegue:
+El camino hacia los sistemas actuales de IA agéntica abarca tres décadas de avances en la arquitectura, la capacitación y el despliegue:
 
 \begin{enumerate}
   \item \textbf{Fundaciones arquitectónicas (2017--2020)}: El Transformer~\cite{vaswani2017attention} introdujo la autoatención como una secuencia universal primitiva que procesa la secuencia. Las leyes de escalado revelaron que los modelos más grandes entrenados en más datos mejora fiablemente. GPT-2 y GPT-3 demostró que los transformadores decodificadores, escalados suficientemente, se convierten en capaces pocos estudiantes.
@@ -310,7 +310,7 @@ La guía abarca 31 capítulos organizados en seis partes:
   \item \textbf{Parte II --- RL Métodos para LLMs} (Capítulos 4 a 12): El total RL-for-LLMs toolkit. RL fundaciones para modelos de lenguaje, luego tratamiento matemático completo PPO, DPO, GRPO, y variantes de optimización de preferencias (Online) DPO, KTO, IPO, ORPO, SimPO), modelo de recompensa, SFT mejores prácticas, arquitectura de sistema a escala y formación de agentes con trayectoria RL.
   \item \textbf{Parte III --- Razonamiento} (Capítulo 13): Modelos de razonamiento grandes --- DeepSeek-R1, OpenAI o1/o3/o4-mini, QwQ --- ¿Cómo cómo? RL descubre cadena de pensamiento, MCTS, proceso de recompensa modelos, y el cálculo de tiempo de prueba.
   \item \textbf{Parte IV --- Evaluación} (Capítulo 14: Integral LLM metodología de evaluación --- métricas, LLM-as-Judge, anotación humana, suites de referencia, detección de contaminación, evaluación de agentes y colapso de razonamiento bajo reformulación.
-  \item \textbf{Parte V --- AI} (Capítulos 15--28): La pila de agente completo --- introducción a la agente AI, RAG y recuperación, sistemas de memoria (incluyendo gestión de hechos bitemporales y soñar con agentes), orquestación y gestión de contextos, ingeniería de bucles (incluyendo escalada cognitiva), ingeniería gráfica, patrones de diseño (incluyendo seguridad de la sustancia, equipo rojo e infraestructura de gateway de agentes), entornos y parámetros de referencia (incluyendo evaluación no-determinística, consideraciones legales y reglamentarias), Model Context Protocol (MCP), habilidades de agente (incluidos agentes autoevolucionadores)), Agent-to-Agent comunicación (A2A), sistemas multiagent (incluyendo arquitecturas centradas en procesos), marcos de desarrollo y agentes UI.
+  \item \textbf{Parte V --- IA agéntica} (Capítulos 15--28): La pila de agente completo --- introducción a la IA agéntica, RAG y recuperación, sistemas de memoria (incluyendo gestión de hechos bitemporales y soñar con agentes), orquestación y gestión de contextos, ingeniería de bucles (incluyendo escalada cognitiva), ingeniería gráfica, patrones de diseño (incluyendo seguridad de la sustancia, equipo rojo e infraestructura de gateway de agentes), entornos y parámetros de referencia (incluyendo evaluación no-determinística, consideraciones legales y reglamentarias), Model Context Protocol (MCP), habilidades de agente (incluidos agentes autoevolucionadores)), Agent-to-Agent comunicación (A2A), sistemas multiagent (incluyendo arquitecturas centradas en procesos), marcos de desarrollo y agentes UI.
   \item \textbf{Parte VI --- Evaluación \& Referencia} (Capítulos 29-31): 118 preguntas detalladas de preguntas de preguntas con respuestas completas que abarcan todos los temas, un capítulo de referencia rápida que consolida las ecuaciones clave, API referencias, y diagnósticos de modo de falla, y una conclusión con direcciones futuras.
 \end{enumerate}
 
@@ -371,7 +371,7 @@ Versión 1.4 añade veinticinco nuevos temas, un nuevo capítulo, un nuevo caso 
 
   \item[Capítulo 12 --- LLM Capacitación en materia de agentes:]~
     \begin{itemize}
-      \item \textbf{Destilación de la tosura (Harness-Zero)} --- a) Capacitación de un modelo bajo un arnés especializado $h^*$ entonces desplegándolo bajo un arnés genérico $h$, el comportamiento de andamio en pesos. El modelo destilado supera el modelo base con $h^*$ todavía unido, recuperando la mayoría de patrones de comportamiento exclusivos del arnés.
+      \item \textbf{Destilación del entorno de ejecución del agente (Harness-Zero)} --- a) Capacitación de un modelo bajo un arnés especializado $h^*$ entonces desplegándolo bajo un arnés genérico $h$, el comportamiento de andamio en pesos. El modelo destilado supera el modelo base con $h^*$ todavía unido, recuperando la mayoría de patrones de comportamiento exclusivos del arnés.
     \end{itemize}
 
   \item[Capítulo 14 --- LLM Evaluación:]~
@@ -472,10 +472,10 @@ Esta guía te lleva de \textbf{primer principio de los sistemas de producción}.
 
 La tesis central es simple: \emph{edificio grande AI los sistemas requieren entender todo el oleoducto, no sólo una capa}. Un ingeniero que depura una carrera de entrenamiento necesita entender GPU jerarquizas de memoria y dinámicas optimizadoras. Un profesional de ajuste fino necesita saber cuándo LoRA Un desarrollador de agentes necesita entender cómo se entrenó el modelo subyacente. Un líder técnico que evalúa los marcos necesita entender qué es lo que hace cada uno de los trade-offs. Esta guía proporciona una imagen completa.
 
-\section*{El camino a la Agente AI: Una breve historia}
+\section*{El camino a la IA agéntica: Una breve historia}
 \label{the-road-to-agentic-ai-a-brief-history}
 
-Hoy es un agente AI sistemas no emergeron en vacío. Se destacan en décadas de sistemas de hito - cada uno que resuelve un problema más estrecho pero construye colectivamente las técnicas, el hardware y la ambición que hicieron posible a los agentes autónomos.
+Los sistemas actuales de IA agéntica no surgieron en vacío. Se destacan en décadas de sistemas de hito - cada uno que resuelve un problema más estrecho pero construye colectivamente las técnicas, el hardware y la ambición que hicieron posible a los agentes autónomos.
 
 \begin{enumerate}
   \item \textbf{Azul profundo (1997)}~\cite{campbell2002deep} --- IBM’s motor de ajedrez derrotado campeón mundial Garry Kasparov utilizando búsqueda de fuerza bruta (200 millones positions/second) con funciones de evaluación artesanales. Probó que las máquinas podían superar el desempeño humano en dominios adversarios bien definidos, pero generalizados a nada más.
@@ -486,8 +486,8 @@ Hoy es un agente AI sistemas no emergeron en vacío. Se destacan en décadas de 
   \item \textbf{AlphaFold (2020)}~\cite{jumper2021alphafold} --- DeepMind solucionó el problema de plegamiento de proteínas de 50 años, prediciendo estructuras de proteínas 3D con precisión atómica. AlphaFold demostró que el aprendizaje profundo podría romper problemas científicos fundamentales considerados anteriormente décadas de distancia. También mostró el poder de la innovación de la arquitectura (atención sobre pares de residuos) combinado con un compute masivo.
   \item \textbf{ChatGPT y RLHF (2022)}~\cite{ouyang2022training} --- InstructGPT/ChatGPT demostró que un modelo base capaz, cuando se alinea a través de RLHF, se convierte en un asistente realmente útil.: AI pasó de una herramienta de investigación a un producto de consumo utilizado por cientos de millones., PPO) se convirtió en la plantilla para todos los siguientes LLM post-entrenamiento.
   \item \textbf{GPT-4 y modelos multimodales (2023)}~\cite{openai2023gpt4} --- Capacidades multimodales (visión + idioma), contextos más largos y mejoría el razonamiento empujado LLMs hacia la cognición para fines generales. Uso de herramientas (intérprete de código, navegación por la web) insinuó las capacidades de agente.
-  \item \textbf{Modelos de resonancia (2024)}~\cite{deepseek2025r1} --- OpenAI’s o1 y DeepSeek-R1 mostró que RL podría enseñar modelos \emph{razón}: cadena de pensamiento, retroceder, auto-verificación surgió espontáneamente de las señales de recompensa solas. Modelos comenzaron a resolver matemáticas de nivel de competencia y tareas complejas de codificación.
-  \item \textbf{Agente AI (2025--presentes)} --- El punto de convergencia: LLMs con capacidades de razonamiento, equipado con acceso estándar de herramientas (MCP), interagent communication (A2A), persistente memoria, y sofisticados marcos de orquestación. Agentes ahora autonómico escribir código, realizar investigaciones, gestionar flujos de trabajo, y coordinar con otros agentes --- el tema de esta guía.
+  \item \textbf{Modelos de razonamiento (2024)}~\cite{deepseek2025r1} --- OpenAI’s o1 y DeepSeek-R1 mostró que RL podría enseñar modelos \emph{razón}: cadena de pensamiento, retroceder, auto-verificación surgió espontáneamente de las señales de recompensa solas. Modelos comenzaron a resolver matemáticas de nivel de competencia y tareas complejas de codificación.
+  \item \textbf{IA agéntica (2025--presentes)} --- El punto de convergencia: LLMs con capacidades de razonamiento, equipado con acceso estándar de herramientas (MCP), interagent communication (A2A), persistente memoria, y sofisticados marcos de orquestación. Agentes ahora autonómico escribir código, realizar investigaciones, gestionar flujos de trabajo, y coordinar con otros agentes --- el tema de esta guía.
 \end{enumerate}
 
 \begin{intuitionbox}
@@ -511,14 +511,14 @@ Esta guía recoge la historia en la era modelo de fundación y la lleva adelante
 
 \begin{itemize}
   \item \textbf{Capítulos 4--8}: Cada uno de los principales RL/preference algoritmo con matemáticas, intuición y TRL código --- PPO, DPO, GRPO, y variantes de optimización de preferencias (Online) DPO, KTO, IPO, ORPO, SimPO, Mejor de la N). Capítulo~8 también abarca la capacitación en materia de decisiones calibrada (RLCR, Jev/RLCD, CLM) para agentes que deben expresar confianza confiable junto con respuestas correctas.
-  \item \textbf{Capítulos 9--10}: Entrenamiento modelo de recompensa (Bradley--Terry, leyes de escalada, piratería de recompensa) y SFT mejores prácticas (calidad de datos, plan de estudios, formato).
+  \item \textbf{Capítulos 9--10}: Entrenamiento modelo de recompensa (Bradley--Terry, leyes de escalada, manipulación de la recompensa) y SFT mejores prácticas (calidad de datos, plan de estudios, formato).
   \item \textbf{Capítulos 11--12}: Arquitectura de sistema a escala (entrenamiento desacoplado, tolerancia a la falla, GPU y la asignación de recursos LLM entrenamiento de agentes --- cómo capacitar a los agentes de fin a fin con trayectoria RL, incluyendo destilación de arnés (baking andamio especializado en pesos modelo a través de Harness-Zero).
 \end{itemize}
 
 \textbf{Parte III: Razonamiento} (Capítulo 13) cubre la frontera de la capacidad modelo --- LLMs a la razón a través de problemas multi-paso.
 
 \begin{itemize}
-  \item \textbf{Capítulo 13 --- RL para los modelos de gran resonancia}: DeepSeek-R1, OpenAI o1/o3/o4-mini, QwQ --- ¿Cómo cómo? RL descubre cadena de pensamiento, MCTS, proceso de recompensa modelos, y el cálculo de tiempo de prueba.
+  \item \textbf{Capítulo 13 --- RL para los modelos de razonamiento de gran tamaño}: DeepSeek-R1, OpenAI o1/o3/o4-mini, QwQ --- ¿Cómo cómo? RL descubre cadena de pensamiento, MCTS, proceso de recompensa modelos, y el cálculo de tiempo de prueba.
 \end{itemize}
 
 \textbf{Parte IV: Evaluación} (Capítulo 14) proporciona la metodología para medir si alguna de estas obras funciona efectivamente.
@@ -527,7 +527,7 @@ Esta guía recoge la historia en la era modelo de fundación y la lleva adelante
   \item \textbf{Capítulo 14 --- LLM Evaluación}: Métricas (perplejidad, pass@k, ELO), LLM-as-Judge patrones, detección de contaminación, suites de referencia, metodología de evaluación de agentes y colapso de razonamiento bajo reformulación.
 \end{itemize}
 
-\textbf{Parte V: Agente AI} (Capítulos 15--28) le lleva de un modelo entrenado a un sistema autónomo desplegado. Esta es la parte más grande, cubriendo todo lo que un agente necesita para operar en el mundo real.
+\textbf{Parte V: IA agéntica} (Capítulos 15--28) le lleva de un modelo entrenado a un sistema autónomo desplegado. Esta es la parte más grande, cubriendo todo lo que un agente necesita para operar en el mundo real.
 
 \begin{itemize}
   \item \textbf{Capítulo 15 --- Introducción a la AI}: Lo que hace un sistema de agentes, el espectro de los chatbots a los agentes autónomos, el A/T/C/S papel taxonomía, y los conceptos fundamentales para el resto de la Parte V.
@@ -836,7 +836,7 @@ El cuadro que figura a continuación muestra cada capítulo de esta guía a la G
 10 & SFT Buenas prácticas                 & SFT Base de referencia para el Asesor \\
 11 & Arquitectura de sistemas en Escala       & --- (infraestructura) \\
 12 & LLM Capacitación en materia de agentes               & Trayectoria final a final RL para el Supervisor \\
-13 & RL para los modelos de gran resonancia      & --- (métodos de razonamiento) \\
+13 & RL para los modelos de razonamiento de gran tamaño      & --- (métodos de razonamiento) \\
 14 & LLM Evaluación                     & Arnés de evaluación para respuestas de los asesores \\
 15 & Introducción a la tecnología AI         & GAS taxonomía de agentes y definiciones de función \\
 16 & RAG                                & Advisor RAG oleoducto sobre literatura médica \\
@@ -1064,8 +1064,8 @@ Antes de sumergirse en detalles arquitectónicos, construyamos intuición para c
 
 \begin{keybox}[Las cuatro etapas clave]
 \begin{enumerate}
-  \item \textbf{Tokenization}: El texto crudo se divide en piezas subpalabras (no caracteres, no palabras completas) usando un vocabulario aprendido. “la felicidad” podría convertirse en [“"felicidad"”] o [“unhapp”, “iness”].
-  \item \textbf{Representación vectorial}: Cada ficha ID índices en una tabla de embedding aprendida, produciendo un vector denso $\mathbb{R}^d$ (típicamente $d = 4096$). Estos vectores capturan significado semántico--- palabras similares consiguen vectores similares.
+  \item \textbf{Tokenization}: El texto crudo se divide en piezas subpalabras (no caracteres, no palabras completas) usando un vocabulario aprendido. “unhappiness” podría dividirse en [“un”, “happiness”] o [“unhapp”, “iness”].
+  \item \textbf{Representación vectorial}: Cada ficha ID índices en una tabla de representaciones vectoriales aprendida, produciendo un vector denso $\mathbb{R}^d$ (típicamente $d = 4096$). Estos vectores capturan significado semántico--- palabras similares consiguen vectores similares.
   \item \textbf{Procesamiento contextual}: El pilar transformador procesa todas las incrustaciones en paralelo, utilizando la autoatención para permitir que cada posición “lee” de todas las otras posiciones. Después $L$ capas, el estado oculto de cada posición codifica información contextual rica.
   \item \textbf{Predicción}: El estado oculto final se proyecta a una distribución de probabilidad sobre el vocabulario completo, y una estrategia de decodificación selecciona el siguiente token.
 \end{enumerate}
@@ -1374,10 +1374,10 @@ La información clave: \textbf{conceptos similares consiguen vectores cercanos}.
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=0.85\textwidth]{figures/fig_006_fig6.png}
-\caption{Visualización del espacio en relieve (2D proyección): semánticamente palabras similares agrupadas. La tabla de embedding aprende estas posiciones durante la preentrenamiento, capturando significado puramente de patrones de co-occurrencia en texto.}
+\caption{Visualización del espacio en relieve (2D proyección): semánticamente palabras similares agrupadas. La tabla de representaciones vectoriales aprende estas posiciones durante la preentrenamiento, capturando significado puramente de patrones de co-occurrencia en texto.}
 \end{figure}
 
-\paragraph{La tabla de embedding.}
+\paragraph{La tabla de representaciones vectoriales.}
 \label{the-embedding-table.}
 
 En la práctica, la capa de embedding es simplemente una matriz $\mathbf{E} \in \mathbb{R}^{|\mathcal{V}| \times d}$ donde fila $i$ almacena el vector de incrustación para ficha $i$:
@@ -1391,7 +1391,7 @@ Para una secuencia de token IDs $[x_1, x_2, \ldots, x_n]$, embedding es una simp
 \mathbf{H}_0 = [\mathbf{E}[x_1];\; \mathbf{E}[x_2];\; \ldots;\; \mathbf{E}[x_n]] \in \mathbb{R}^{n \times d}
 \]
 
-\begin{keybox}[Tabla de Embedding en Transformers]
+\begin{keybox}[Tabla de representaciones vectoriales en Transformers]
 \begin{itemize}
   \item \textbf{Tamaño}: $|\mathcal{V}| \times d$. Para Llama-3: $128{,}256 \times 4{,}096 = 525$Parámetros M (6.5\% modelo 8B).
   \item \textbf{Inicialización}: Aleatorio (Xavier/normal), entonces aprendió a través de la retropropagación.
@@ -1402,7 +1402,7 @@ Para una secuencia de token IDs $[x_1, x_2, \ldots, x_n]$, embedding es una simp
 \end{keybox}
 
 \begin{intuitionbox}[Por qué las Embeddings funcionan]
-La tabla de embedding se aprende de fin a fin con el resto del modelo. Debido a que el modelo está entrenado para predecir el siguiente token, debe aprender representaciones donde las fichas que aparecen en contextos similares obtienen vectores similares. Esta es la hipótesis distributiva: “conocirás una palabra de la empresa que mantiene”~\cite{firth1957synopsis}. La capa de embedding comprime esta estructura estadística en geometría densa.
+La tabla de representaciones vectoriales se aprende de fin a fin con el resto del modelo. Debido a que el modelo está entrenado para predecir el siguiente token, debe aprender representaciones donde las fichas que aparecen en contextos similares obtienen vectores similares. Esta es la hipótesis distributiva: “conocirás una palabra de la empresa que mantiene”~\cite{firth1957synopsis}. La capa de embedding comprime esta estructura estadística en geometría densa.
 \end{intuitionbox}
 
 \paragraph{El problema de la anisotropía.}
@@ -2073,7 +2073,7 @@ Al agregar un cabezal de valor a un preentrenado LM, inicializarlo cerca de cero
 \end{warningbox}
 
 \begin{intuitionbox}[Tiro de peso: LM Head = Embedding Matrix Transposed]
-Más moderno LLMs \emph{corbata} el LM pesos cabeza con la matriz de incrustación de entrada: \texttt{lm\_head.weight = model.embed\_tokens.weight}. Esto significa que LM cabeza \emph{no} una capa separadamente aprendida--- reutiliza la tabla de embedding. Beneficios: menos parámetros ($|\mathcal{V}| \times d$ salvado), mejor generalización, y la estructura geométrica del espacio de embedding determina directamente las probabilidades de ficha. HuggingFace: \texttt{model.lm\_head.weight is model.model.embed\_tokens.weight} de retornos \texttt{True} para la mayoría de los modelos.
+Más moderno LLMs \emph{corbata} el LM pesos cabeza con la matriz de incrustación de entrada: \texttt{lm\_head.weight = model.embed\_tokens.weight}. Esto significa que LM cabeza \emph{no} una capa separadamente aprendida--- reutiliza la tabla de representaciones vectoriales. Beneficios: menos parámetros ($|\mathcal{V}| \times d$ salvado), mejor generalización, y la estructura geométrica del espacio de embedding determina directamente las probabilidades de ficha. HuggingFace: \texttt{model.lm\_head.weight is model.model.embed\_tokens.weight} de retornos \texttt{True} para la mayoría de los modelos.
 \end{intuitionbox}
 
 \newpage
@@ -6495,7 +6495,7 @@ for batch in ppo_trainer.dataloader:
 \textbf{Parámetro} & \textbf{Típico} & \textbf{Efecto de que se equivoca} \\
 \midrule
 \texttt{cliprange} & 0.2 & Demasiado bajo: sin aprendizaje. Demasiado alto: inestabilidad. \\
-\texttt{init\_kl\_coef} & 0.01--0.1 & Demasiado bajo: la piratería de recompensa. SFT. \\
+\texttt{init\_kl\_coef} & 0.01--0.1 & Demasiado bajo: la manipulación de la recompensa. SFT. \\
 \texttt{target\_kl} & 4--8 & Objetivo de control adaptable.. \\
 \texttt{ppo\_epochs} & 4 & Demasiados: sobresale para lote. Demasiados: residuos gen compute. \\
 \texttt{learning\_rate} & $1{-}5 \times 10^{-6}$ & Demasiado alto: olvido catastrófico. \\
@@ -7484,7 +7484,7 @@ Sin presión de diversidad, RL-trained LLMs colapsar a un conjunto estrecho de r
 \begin{itemize}
   \item El modelo aprende una respuesta “templa” para cada tipo de pregunta
   \item La entropía cae rápidamente; el modelo se convierte en determinista
-  \item El piratería de recompensa se vuelve más fácil (las salidas estrechas son más fáciles de explotar)
+  \item El manipulación de la recompensa se vuelve más fácil (las salidas estrechas son más fáciles de explotar)
   \item La generalización sufre: el modelo memoriza patrones de recompensa, no razonando
 \end{itemize}
 
@@ -11204,7 +11204,7 @@ Estándar RLHF (PPO/DPO) optimización para la calidad de un solo giro: dada una
 
 \begin{itemize}
   \item Decidir \emph{cuando} utilizar herramientas vs. razón interna
-  \item Recuperar de errores de medio-trayectorio (autocorrección)
+  \item Recuperar de errores a mitad de la trayectoria (autocorrección)
   \item Exploración de equilibrio (tratar nuevos enfoques) con explotación (utilizar patrones conocidos)
   \item Observabilidad parcial de la manija (los productos de la toalla pueden ser incompletos o ruidosos)
 \end{itemize}
@@ -12310,7 +12310,7 @@ Latency (time to first action) & $<3$ segundos & Inferencia modelo + tiempo de p
 \begin{intuitionbox}[Prácticas de las visiones para la productividad RL]
 \begin{enumerate}
   \item \textbf{SFT calidad es el suelo}: RL sólo puede mejorar sobre qué SFT si el SFT modelo no puede formatear un Gráfico válido API llamada, RL no lo descubrirá. Invierte fuertemente en la calidad de datos de Fase 1.
-  \item \textbf{La piratería de recompensa es inevitable}: El agente \emph{lo haré.} encontrar atajos. Ejemplos comunes:
+  \item \textbf{La manipulación de la recompensa es inevitable}: El agente \emph{lo haré.} encontrar atajos. Ejemplos comunes:
 
 \begin{itemize}
   \item Crear un archivo de Excel vacío para “completar” una tarea de hoja de cálculo (passes existence check)
@@ -12766,7 +12766,7 @@ Utilizando RLFactory con llamadas de herramientas asincrónicas y diversas seña
 \begin{itemize}
   \item \textbf{Qwen3-4B} entrenados con RLFactory superó los modelos significativamente mayores en las preguntas naturales.
   \item \textbf{6.8$\times$ caudal de procesamiento} mejora sobre las bases de referencia sincronizadas de la elaboración de instrumentos mediante la ejecución de la asinc.
-  \item Diversas recompensas (corrección, formato, eficiencia de herramienta) evitan la piratería de recompensa en cualquier señal única.
+  \item Diversas recompensas (corrección, formato, eficiencia de herramienta) evitan la manipulación de la recompensa en cualquier señal única.
 \end{itemize}
 
 La información clave: pequeños modelos con entrenamiento interactivo de alta calidad pueden superar grandes modelos entrenados en datos estáticos, porque interactivo RL permite que el modelo descubra estrategias de uso de herramientas que ningún demostrador humano pensaría incluir en un conjunto de datos.
@@ -12800,12 +12800,12 @@ xAI's Grok~4.5 (Julio 2026)~\cite{grok45_2026} introdujo una fuente de datos nov
 
 \part{Razonamiento}
 
-\chapter{RL para los modelos de gran resonancia}
+\chapter{RL para los modelos de razonamiento de gran tamaño}
 \label{sec:rl_reasoning}
 
 El surgimiento de grandes modelos de razonamiento representa uno de los acontecimientos más importantes en la actualidad AI. A diferencia de la formación estándar del modelo de lenguaje, que optimiza para la predicción de próxima ficha, centrado en el razonamiento RL enseña modelos a \emph{pensar antes de responder}---asignar cálculos adicionales en tiempo de inferencia para explorar, verificar y perfeccionar pasos intermedios. Este capítulo proporciona un tratamiento técnico integral de los métodos, arquitecturas y leyes de escalado que sustentan este paradigma.
 
-\begin{keybox}[GAS Conexión --- RL para los modelos de gran resonancia]
+\begin{keybox}[GAS Conexión --- RL para los modelos de razonamiento de gran tamaño]
 El razonamiento de la cadena de pensamiento no es un lujo en el GAS---es un requisito de seguridad. Una recomendación sin un rastro de razonamiento visible no puede ser auditada por un médico. Las técnicas del capítulo siguiente para los modelos de razonamiento de entrenamiento son directamente aplicables a los GAS Advisor.
 
 \textbf{Escalada de tiempo de prueba (\hyperref[sec:test_time_methods]{\S~Métodos de escalado de tiempo de prueba}).}
@@ -13271,7 +13271,7 @@ LATS~\cite{zhou2024lats} & Árbol + reflexión & $O(N \cdot d)$ & Parcial & LLM-
 \end{itemize}
 \end{keybox}
 
-\begin{intuitionbox}[El escalado de tiempo de prueba implícito en modelos de resonancia]
+\begin{intuitionbox}[El escalado de tiempo de prueba implícito en modelos de razonamiento]
 Modelos de razonamiento modernos (DeepSeek-R1~\cite{deepseek2025r1}, OpenAI o1/o3~\cite{openai2024o1, openai2025o3}) perform \textbf{escalada implícita de tiempo de prueba} a través de larga generación de cadena de pensamiento. Sus fichas de “pensamiento” sirven una función análoga a MCTS rollouts: el modelo explora múltiples enfoques, retrocesos (“Wait, permítanme reconsiderar...”), verifica pasos intermedios y asigna más fichas a subproblemas más difíciles. R1/o1 la capacitación es que GRPO/RL enseña el modelo para realizar esta búsqueda implícita \emph{dentro de una sola generación}, eliminar la necesidad de orquestación externa (ToT incitaciones, MCTS infraestructura). El modelo se convierte en su propio algoritmo de búsqueda.
 \end{intuitionbox}
 
@@ -13529,7 +13529,7 @@ Si bien los detalles o3 y o4-mini siguen siendo en gran medida propietarios, han
   \item \textbf{Uso de herramientas}: o3/o4-mini integrar el uso de herramientas (ejecución de código, búsqueda web) en el proceso de razonamiento, permitiendo al modelo verificar los pasos intermedios programáticamente.
 \end{itemize}
 
-\section{QwQ y Qwen Modelos de resonancia}
+\section{QwQ y Qwen Modelos de razonamiento}
 \label{subsec:qwq_qwen}
 
 Alibaba Qwen el equipo ha desarrollado una serie de modelos de razonamiento (QwQ-32B~\cite{qwen2024qwq}, Qwen3~\cite{qwen2025qwen3}) que representan la frontera de código abierto junto con DeepSeek-R1. Su enfoque difiere en varios aspectos clave.
@@ -13895,7 +13895,7 @@ Empíricamente, la división óptima es dependiente de problemas:
 
 Esto motiva \textbf{presupuestos de pensamiento adaptativo}: asignar más fichas a problemas más difíciles, que pueden ser estimados por la incertidumbre del modelo en los intentos de solución inicial.
 
-\section{Comparación de modelos de resonancia}
+\section{Comparación de modelos de razonamiento}
 \label{subsec:reasoning_comparison}
 
 \begin{table}[ht!]
@@ -13935,10 +13935,10 @@ Efectivo empírico: \textbf{o3} lo logrado \textbf{45.1\% on ARC-AGI} (un punto 
 \subsection{El problema de la superposición}
 \label{subsec:overthinking}
 
-Escalada de tiempo de inferencia introduce un modo de falla crítico: \textbf{sobrepensar}. Modelos de resonancia entrenados para generar largas cadenas de pensamiento continúan generando tokens incluso cuando la respuesta es obvia, desperdiciando la precisión computarizada y a veces degradante al introducir pasos espuriosos de razonamiento.
+Escalada de tiempo de inferencia introduce un modo de falla crítico: \textbf{sobrepensar}. Modelos de razonamiento entrenados para generar largas cadenas de pensamiento continúan generando tokens incluso cuando la respuesta es obvia, desperdiciando la precisión computarizada y a veces degradante al introducir pasos espuriosos de razonamiento.
 
 \begin{warningbox}[Sobrepensar: Cuando más Tokens Hurt]
-Los modelos de resonancia muestran una característica \textbf{Curva de precisión en forma de U} como función del presupuesto de fichas sobre problemas fáciles:
+Los modelos de razonamiento muestran una característica \textbf{Curva de precisión en forma de U} como función del presupuesto de fichas sobre problemas fáciles:
 
 \begin{enumerate}
   \item Cadenas cortas: razonamiento insuficiente, baja precisión.
@@ -14083,7 +14083,7 @@ El campo de RL para los modelos de razonamiento ha avanzado notablemente rápida
 
 \begin{enumerate}
   \item \textbf{Las recompensas verificables son suficientes}: Para dominios con verificación de la verdad terrestre (matriz, código), las recompensas sólo de resultados son suficientes para RL para descubrir estrategias de razonamiento sofisticadas, sin requerir modelos de recompensa de proceso.
-  \item \textbf{Computación de tiempo de prueba es un nuevo eje}: Modelos de resonancia introducen una nueva dimensión de escalado--inferencia compute--- que es aproximadamente substituible con el computador de entrenamiento para tareas de razonamiento duro.
+  \item \textbf{Computación de tiempo de prueba es un nuevo eje}: Modelos de razonamiento introducen una nueva dimensión de escalado--inferencia compute--- que es aproximadamente substituible con el computador de entrenamiento para tareas de razonamiento duro.
   \item \textbf{La destilación es altamente eficaz}: Los grandes modelos de razonamiento pueden transferir sus capacidades a modelos mucho más pequeños mediante un ajuste de precisión supervisado en cadenas generadas, a menudo superando directamente RL entrenamiento de modelos pequeños. La autodestilación antipolio cierra aún más la brecha entre la destilación y RL a una fracción del computador.
   \item \textbf{Meta-cognición emergente}: RL entrenamiento en tareas de razonamiento produce comportamientos emergentes de autocorrección y verificación que no fueron entrenados explícitamente.
   \item \textbf{La supervisión de Dense supera las recompensas escasas}: La autodestilación política alcanza RL-level razonando 10--100$\times$ menor computación al proporcionar comentarios de nivel de fichas en lugar de recompensas de nivel de episodio.
@@ -15022,7 +15022,7 @@ La mayoría de los puntos de referencia presentan cada problema en una forma can
 En entornos agentes, el colapso de razonamiento es especialmente peligroso. Un agente que falla cuando un usuario replantea una solicitud- - o cuando una herramienta devuelve datos en un formato inesperado- producirá silenciosamente resultados incorrectos. Las suites de evaluación de la naturaleza deben incluir variantes de parafrase y perturbaciones de formato como práctica estándar..
 \end{warningbox}
 
-\part{Agente AI}
+\part{IA agéntica}
 
 \chapter{Introducción a la tecnología AI}
 \label{introduction-to-agentic-ai}
@@ -15032,7 +15032,7 @@ Un agente es un sistema que percibe su entorno, razones sobre qué hacer, toma a
 Las partes anteriores nos equiparon con el algoritmo-como entrenar, alinear y razonar con LLMs. Cubrimos arquitecturas de transformadores y GPU sistemas (Part I), los métodos de aprendizaje de refuerzo que alinean modelos con la intención humana (Parte I) II), las capacidades de razonamiento que emergen de RL capacitación (Parte) III), y metodología de evaluación (Parte IV). Esta parte se convierte en la cuestión central de la modernidad AI ingeniería: ¿cómo podemos \emph{despliegue} estos modelos como agentes autónomos que perciben, planifican, actúan y aprenden en entornos de composición abierta?
 
 \begin{keybox}[GAS Conexión --- Introducción a la Agencia AI]
-El Guardian Angel System es el ejemplo principal de funcionamiento del libro de un agente AI el sistema, y el marco conceptual del capítulo siguiente es el objetivo a través del cual todo el GAS la arquitectura debe entenderse.
+El Guardian Angel System es el ejemplo principal de funcionamiento del libro de un IA agéntica el sistema, y el marco conceptual del capítulo siguiente es el objetivo a través del cual todo el GAS la arquitectura debe entenderse.
 
 \textbf{El percepto--plan--acto de lazo.}
 El GAS implementa un perceptivo continuo--plan--act loop: \texttt{monitor\_node()} \emph{percibimientos} la corriente de glucosa, \texttt{supervisor\_node()} \emph{planes} que agentes a invocar, y \texttt{caregiver\_node()} \emph{actos} por enviar una alerta. Este bucle corre cada 5 minutos (el CGM intervalo de muestreo del \texttt{CGMSimulator} in in ingles \texttt{shared/patient\_data.py}), haciendo el GAS un sistema de agente en tiempo real con una restricción de latencia dura.
@@ -15048,7 +15048,7 @@ El GAS no es totalmente autónomo: \texttt{caregiver\_node()} Siempre implica un
 \end{keybox}
 
 \newpage
-An \textbf{agente AI sistema} es uno donde un LLM opera en un bucle: recibe observaciones de un entorno (mensajes de usuario, salidas de herramientas, datos de sensores), razones para hacer a continuación, toma acciones (llamadas de herramientas, ejecución de códigos, API solicitudes), y se realiza hasta alcanzar un objetivo o pide explícitamente entrada humana. Esto contrasta con el paradigma de “single-turn chatbot” donde el modelo produce una respuesta y espera.
+An \textbf{IA agéntica sistema} es uno donde un LLM opera en un bucle: recibe observaciones de un entorno (mensajes de usuario, salidas de herramientas, datos de sensores), razones para hacer a continuación, toma acciones (llamadas de herramientas, ejecución de códigos, API solicitudes), y se realiza hasta alcanzar un objetivo o pide explícitamente entrada humana. Esto contrasta con el paradigma de “single-turn chatbot” donde el modelo produce una respuesta y espera.
 
 El cambio de chatbot a agente presenta varios desafíos fundamentales que una sola llamada modelo no puede abordar:
 
@@ -15098,7 +15098,7 @@ A lo largo de todo, mantenemos la perspectiva de los sistemas: agenteic AI no se
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.85\textwidth]{figures/fig_049_agentic-stack.png}
-\caption{El agente AI la pila de arquitectura. \textbf{Agente Core} ejecuta un loop de acción percibido--reason--actua, coordinado por el \textbf{Harness \& Orquesta} capa que administra contexto, estado, guardias y observabilidad. El agente interactúa hacia abajo con \textbf{Sistemas externos}---RAG para la recuperación del conocimiento, Memoria para la persistencia, Herramientas vía MCP, y otros agentes a través de A2A---todos a tierra en un \textbf{para el Medio Ambiente}. El \textbf{Usuario} proporciona metas, comentarios y supervisión desde arriba. Los flechas indican flujo de datos bidireccional; las flechas de bucle azul muestran el ciclo de agente iterativo.}
+\caption{El IA agéntica la pila de arquitectura. \textbf{Agente Core} ejecuta un loop de acción percibido--reason--actua, coordinado por el \textbf{Harness \& Orquesta} capa que administra contexto, estado, guardias y observabilidad. El agente interactúa hacia abajo con \textbf{Sistemas externos}---RAG para la recuperación del conocimiento, Memoria para la persistencia, Herramientas vía MCP, y otros agentes a través de A2A---todos a tierra en un \textbf{para el Medio Ambiente}. El \textbf{Usuario} proporciona metas, comentarios y supervisión desde arriba. Los flechas indican flujo de datos bidireccional; las flechas de bucle azul muestran el ciclo de agente iterativo.}
 \label{fig:agentic-stack}
 \end{figure}
 
@@ -16563,7 +16563,7 @@ Tres modos de falla distintos surgen cuando los agentes carecen de memoria persi
 \end{enumerate}
 
 \begin{intuitionbox}[Memoria como Arquitectura Cognitiva]
-La ciencia cognitiva distingue varios sistemas de memoria en agentes biológicos~\cite{tulving1985memory, squire1992declarative}: \emph{memoria de trabajo} (manipulación activa de la información), \emph{memoria episódica} (eventos autobiográficos), \emph{memoria semántica} (conocimiento mundial), y \emph{Memoria procesal} (habilidades y hábitos). Eficacia de la agente AI los sistemas se benefician de distinciones análogas- no porque estamos simulando neurociencia, sino porque estas categorías reflejan realmente diferentes \emph{pautas de acceso}, \emph{frecuencias de actualización}, y \emph{mecanismos de recuperación}.
+La ciencia cognitiva distingue varios sistemas de memoria en agentes biológicos~\cite{tulving1985memory, squire1992declarative}: \emph{memoria de trabajo} (manipulación activa de la información), \emph{memoria episódica} (eventos autobiográficos), \emph{memoria semántica} (conocimiento mundial), y \emph{Memoria procesal} (habilidades y hábitos). Eficacia de la IA agéntica los sistemas se benefician de distinciones análogas- no porque estamos simulando neurociencia, sino porque estas categorías reflejan realmente diferentes \emph{pautas de acceso}, \emph{frecuencias de actualización}, y \emph{mecanismos de recuperación}.
 \end{intuitionbox}
 
 Formadamente, modelamos un agente como un tuple $\mathcal{A} = (\pi_\theta, \mathcal{M}, \mathcal{R}, \mathcal{W})$ Donde $\pi_\theta$ es la política (la LLM), $\mathcal{M}$ es la memoria de la tienda, $\mathcal{R}: \mathcal{Q} \times \mathcal{M} \to \mathcal{D}$ es una función de recuperación de las consultas de asignación de documentos recuperados, y $\mathcal{W}: \mathcal{M} \times \mathcal{E} \to \mathcal{M}$ es una función de escritura que actualiza la memoria con nuevas experiencias $\mathcal{E}$. A cada paso $t$ el agente observa $o_t$, recupera el contexto pertinente $c_t = \mathcal{R}(o_t, \mathcal{M})$, y actos: 
@@ -17961,12 +17961,12 @@ El campo está evolucionando rápidamente.: (1) \emph{memoria de tierra}---asegu
 
 Moderno LLM-based entre el modelo de lengua cruda y las tareas del mundo real que debe realizar se encuentra una capa de infraestructura que gestiona la memoria, las llamadas de herramientas de rutas, las pistas de estado y impone restricciones de seguridad. \textbf{entorno de ejecución del agente}. Comprender cómo diseñar e implementar un arnés robusto es tan importante como entender el modelo en sí mismo - un arnés mal diseñado puede anular las capacidades de incluso los más poderosos LLM, mientras que un bien diseñado puede amplificar dramáticamente lo que un modelo modesto puede lograr.
 
-Este capítulo cubre la totalidad de la pila de diseño de arnés de agente: gestión de ventanas de contexto, arquitectura rápida, integración de herramientas, patrones de orquestación, gestión del estado, manejo de errores y problemas de producción. Concluimos con una comparación de marco y un ejemplo de implementación completo.
+Este capítulo cubre la totalidad de la pila de diseño de entorno de ejecución del agente: gestión de ventanas de contexto, arquitectura rápida, integración de herramientas, patrones de orquestación, gestión del estado, manejo de errores y problemas de producción. Concluimos con una comparación de marco y un ejemplo de implementación completo.
 
 \begin{keybox}[GAS Conexión --- Agente Harness: Gestión de Contextos y Orquestración]
-El GAS LangGraph El supervisor es el arnés de agente. Cada concepto en el capítulo siguiente ---contexto de montaje, arquitectura rápida, integración de herramientas, patrones de orquestación, administración del estado- se implementa directamente en \texttt{capstone\_gas/gas\_system.py}.
+El GAS LangGraph El supervisor es el entorno de ejecución del agente. Cada concepto en el capítulo siguiente ---contexto de montaje, arquitectura rápida, integración de herramientas, patrones de orquestación, administración del estado- se implementa directamente en \texttt{capstone\_gas/gas\_system.py}.
 
-\textbf{¿Qué es un arnés de agente?? (\hyperref[subsec:what-is-harness]{\S~Lo que es un agente Harness?})}
+\textbf{¿Qué es un entorno de ejecución del agente?? (\hyperref[subsec:what-is-harness]{\S~Lo que es un agente Harness?})}
 El GAS arnés es el código que se encuentra entre el crudo LLM API y la lógica de aplicación clínica. Es responsable de: montaje del impulso del sistema, inyectando el contexto del paciente, administrando el RAG el bucle de recuperación, la enrutamiento entre agentes, el manejo de errores y la ejecución del presupuesto de la latencia. El arnés se implementa como el \texttt{build\_gas\_graph()} función \texttt{capstone\_gas/gas\_system.py}, que monta el LangGraph \texttt{StateGraph}.
 
 \textbf{Gestión de ventanas de contexto (\hyperref[subsec:context-management]{\S~Context Window Management}).}
@@ -18459,7 +18459,7 @@ MCP utiliza un modelo cliente-servidor:
 
 \begin{itemize}
   \item \textbf{MCP Servidor:} Expone herramientas, recursos y impulsos sobre un protocolo estandarizado. Puede ser un proceso local o un servicio remoto.
-  \item \textbf{MCP Cliente:} El arnés de agente se conecta a uno o más MCP servidores, descubre las herramientas disponibles y las llamadas de herramientas de rutas.
+  \item \textbf{MCP Cliente:} El entorno de ejecución del agente se conecta a uno o más MCP servidores, descubre las herramientas disponibles y las llamadas de herramientas de rutas.
   \item \textbf{Capas de transporte:} Apoyos \texttt{stdio} (subprocesos locales), HTTP+SSE (remoto) y WebSocket transportes.
 \end{itemize}
 
@@ -18816,7 +18816,7 @@ Personal & H & H & H & H & Control completo, sin bloqueo \\
 \end{itemize}
 
 \begin{questionbox}[Cuándo utilizar un Marco vs. Construir Personalizado?]
-Utilice un marco cuando: usted está prototipando, su caso de uso se ajusta a las abstracciones del marco, o necesita una rápida integración con muchas herramientas. Construya personalizado cuando: usted tiene estricto latency/cost requisitos, las abstracciones del marco filtran de maneras que causan errores, necesita un control bien arraigado sobre la gestión del contexto, o está construyendo un producto donde el arnés de agente es un diferenciador de núcleo.
+Utilice un marco cuando: usted está prototipando, su caso de uso se ajusta a las abstracciones del marco, o necesita una rápida integración con muchas herramientas. Construya personalizado cuando: usted tiene estricto latency/cost requisitos, las abstracciones del marco filtran de maneras que causan errores, necesita un control bien arraigado sobre la gestión del contexto, o está construyendo un producto donde el entorno de ejecución del agente es un diferenciador de núcleo.
 \end{questionbox}
 
 \section{Implementación: Harness Agente de Producción}
@@ -19314,7 +19314,7 @@ Los agentes de prueba son fundamentalmente diferentes de los programas de prueba
 \subsection*{Resumen}
 \label{summary}
 
-El arnés de agente es la fundación de ingeniería que transforma un modelo de lenguaje en un agente capaz y fiable.:
+El entorno de ejecución del agente es la fundación de ingeniería que transforma un modelo de lenguaje en un agente capaz y fiable.:
 
 \begin{itemize}
   \item \textbf{El contexto es un recurso finito y precioso.} Ejecute los presupuestos explícitamente, cuente con fichas con el tokenizer exacto del modelo, y comprime la historia proactivamente.
@@ -20179,7 +20179,7 @@ Los bucles son sobre \emph{iteración}. Los Gráficos están sobre \emph{enrutam
 \label{sec:graph-primitives}
 % -----------------------------------------------------------------------
 
-Un gráfico computacional para el agente AI formalmente un gráfico dirigido $\mathcal{G} = (\mathcal{N}, \mathcal{E}, \mathcal{S})$ Donde:
+Un gráfico computacional para el IA agéntica formalmente un gráfico dirigido $\mathcal{G} = (\mathcal{N}, \mathcal{E}, \mathcal{S})$ Donde:
 
 \begin{itemize}
   \item $\mathcal{N}$ es un conjunto de \textbf{nodos}, cada uno representando una unidad de computación (an LLM llamada, una invocación de herramientas, un puesto de control humano o un subgrafo).
@@ -20482,7 +20482,7 @@ Estado & Ventana de contexto acumulable & Esquema estatal compartida \\
 Routing & Implícito (condicionales de cuerpo de la corriente) & Explicit (filtros condicionados, funciones de enrutamiento) \\
 Paralelismo & Secuencial por defecto & Ramas paralelas nativas a través de ventilador-out \\
 Modularidad & Cuerpo monolítico & Nodos y subgrafos composibles \\
-Debuggability & Inspect context window & Inspección de los nodos inputs/outputs via checkpoints \\
+Debuggability & Inspeccionar la ventana de contexto & Inspección de los nodos inputs/outputs via checkpoints \\
 Mejor & Retry y refinamiento de una sola pieza & Multi-pasos de trabajo, multi-pataje, multi-agent \\
 \bottomrule
 \end{tabular}
@@ -22262,7 +22262,7 @@ UniClawBench~\cite{uniclawbench2026} ejecuta 400 tareas bilingües del mundo rea
 \paragraph{Long-Horizon-Terminal-Bench.}
 Long-Horizon-Terminal-Bench~\cite{terminalbench2026} abarca 46 tareas complejas en 21 dominios, probando si los agentes pueden navegar por operaciones de línea de comandos que tardan horas en vez de minutos. \textbf{densa gratificacion basada en recompensas}: marcando el progreso intermedio en cada paso en lugar de depender del éxito binario en la línea de meta. Esto expone una realidad brutal: incluso los modelos fronterizos más fuertes no ejecutan más que $\sim$15 comandos terminales consecutivos sin descarrilar-- revelando que la ejecución secuencial larga-horizon sigue siendo un desafío fundamental sin resolver.
 
-Una importante distinción metodológica en los resultados de Terminal-Bench es la \textbf{arnés-vs-model} espacio: el mismo modelo subyacente puede marcar muy diferente dependiendo del arnés de agente envolviéndolo. Un modelo emparejado con un arnés que implementa la compactación de contexto agresivo, recuperación de errores estructurada y control de nivel de paso puede marcar 20--30 puntos porcentuales más alto que el mismo modelo en un arnés de paso único ingenuo. \emph{sistema} (modelo + arnés), no el modelo solo---una distinción que importa al comparar los resultados entre los documentos que utilizan diferentes configuraciones de evaluación. A mediados de 2026, los resultados más fuertes publicados en Terminal-Bench alcanzan aproximadamente 38\% la terminación de tareas en las tareas más duras de larga duración, con la brecha entre los mejores sistemas de peso abierto y los mejores propietarios, que se reducen a aproximadamente 8--12 puntos porcentuales.
+Una importante distinción metodológica en los resultados de Terminal-Bench es la \textbf{arnés-vs-model} espacio: el mismo modelo subyacente puede marcar muy diferente dependiendo del entorno de ejecución del agente envolviéndolo. Un modelo emparejado con un arnés que implementa la compactación de contexto agresivo, recuperación de errores estructurada y control de nivel de paso puede marcar 20--30 puntos porcentuales más alto que el mismo modelo en un arnés de paso único ingenuo. \emph{sistema} (modelo + arnés), no el modelo solo---una distinción que importa al comparar los resultados entre los documentos que utilizan diferentes configuraciones de evaluación. A mediados de 2026, los resultados más fuertes publicados en Terminal-Bench alcanzan aproximadamente 38\% la terminación de tareas en las tareas más duras de larga duración, con la brecha entre los mejores sistemas de peso abierto y los mejores propietarios, que se reducen a aproximadamente 8--12 puntos porcentuales.
 
 \chapter{Model Context Protocol (MCP)}
 \label{sec:mcp}
@@ -26380,7 +26380,7 @@ Los experimentos tempranos revelaron un modo de falla crítica: los agentes elim
 \section{Arquitecturas de agentes de procesos-céntricos}
 \label{sec:process-centric}
 
-Gran parte de la literatura temprana sobre el agente AI mapea agentes individuales a roles humanos individuales: un ``agente de investigación'' reemplaza a un analista de investigación; un ``agente de codificación'' reemplaza a un desarrollador. Esta definición es útil para la adopción pero engañosa para la arquitectura. Las implementaciones de empresas de mayor valor no están reemplazando a trabajadores individuales--- ellos están reemplazando a trabajadores enteros \emph{procesos}: el ciclo de orden a cambio, el flujo de trabajo de adquisiciones, el sistema de examen de cumplimiento, que abarca múltiples sistemas, abarca corrientes de datos estructuradas y han existido mucho antes LLMs.
+Gran parte de la literatura temprana sobre el IA agéntica mapea agentes individuales a roles humanos individuales: un ``agente de investigación'' reemplaza a un analista de investigación; un ``agente de codificación'' reemplaza a un desarrollador. Esta definición es útil para la adopción pero engañosa para la arquitectura. Las implementaciones de empresas de mayor valor no están reemplazando a trabajadores individuales--- ellos están reemplazando a trabajadores enteros \emph{procesos}: el ciclo de orden a cambio, el flujo de trabajo de adquisiciones, el sistema de examen de cumplimiento, que abarca múltiples sistemas, abarca corrientes de datos estructuradas y han existido mucho antes LLMs.
 
 \textbf{Arquitectura centrada en procesos} trata el sistema de agente como componente de un tejido de datos de empresa, no como una interfaz de chat con herramientas adjuntas. Los insumos del agente son eventos estructurados de sistemas empresariales (ERP, CRM, data warehouses); sus productos son acciones estructuradas que escriben de nuevo a esos sistemas; y su lógica de coordinación refleja el proceso de negocio que se automatiza, no los patrones de conversación de un chatbot.
 
@@ -26406,7 +26406,7 @@ Arquitecturas centradas en procesos abordan a los tres por agentes tratados como
 
 \textbf{Estado de proceso de larga duración.} Los agentes centrados en el proceso mantienen un estado duradero en varias sesiones. Un agente de revisión de cumplimiento que está procesando una auditoría de 200 documentos puede funcionar durante días, pasándose para las aprobaciones humanas y resumiendo cuando llegan.~\ref{sec:graph-engineering}) proporcionar el mecanismo estructural; una tienda de estado duradera (con respaldo de la base de datos, no en memoria) proporciona la persistencia.
 
-\textbf{Ejecución civil.} Los procesos institucionales deben ser idempotentes: ejecutar el mismo paso dos veces debe producir el mismo resultado que ejecutarlo una vez. Esto es esencial para la tolerancia a la falla (retratar un paso fallido no debe doble carga a un cliente o enviar un correo electrónico duplicado). Las acciones del agente que escriben a sistemas externos deben llevar claves de idempotencia, y el arnés del agente debe hacer cumplir exactamente una vez semántica para acciones irreversibles.
+\textbf{Ejecución civil.} Los procesos institucionales deben ser idempotentes: ejecutar el mismo paso dos veces debe producir el mismo resultado que ejecutarlo una vez. Esto es esencial para la tolerancia a la falla (retratar un paso fallido no debe doble carga a un cliente o enviar un correo electrónico duplicado). Las acciones del agente que escriben a sistemas externos deben llevar claves de idempotencia, y el entorno de ejecución del agente debe hacer cumplir exactamente una vez semántica para acciones irreversibles.
 
 \begin{table}[ht!]
 \centering
@@ -30119,7 +30119,7 @@ Con $\lambda = 0.95$: $\hat{A}_5 = 0.1$ (sólo la final TD error), $\hat{A}_4 = 
 
 \textbf{Utilizando PRM in in ingles RLHF}: Recompensas per-token de PRM alimentado directamente GAE. Cada ficha recibe retroalimentación inmediata, no sólo el final de la secuencia. Esto mejora dramáticamente la asignación de crédito para cadenas de razonamiento largas.
 
-\emph{\textbf{Examen:} Capítulos~9 y~13 (Formación modelo de recompensa; RL para los modelos de gran resonancia).}
+\emph{\textbf{Examen:} Capítulos~9 y~13 (Formación modelo de recompensa; RL para los modelos de razonamiento de gran tamaño).}
 \end{questionbox}
 
 \begin{questionbox}[Q15: ¿Cómo evalúa si RL en realidad mejoró el modelo?]
@@ -30163,7 +30163,7 @@ Con $\lambda = 0.95$: $\hat{A}_5 = 0.1$ (sólo la final TD error), $\hat{A}_4 = 
   \item Sólo para la selección final de modelos, no durante la formación (demasiado slow/expensive).
 \end{itemize}
 
-\textbf{Banderas rojas}: RM puntuación + precio de la puntuación plana = piratería de recompensa, no mejora real. Ganar + puntos de referencia abajo = impuesto de alineación demasiado alto, reducir RL fuerza.
+\textbf{Banderas rojas}: RM puntuación + precio de la puntuación plana = manipulación de la recompensa, no mejora real. Ganar + puntos de referencia abajo = impuesto de alineación demasiado alto, reducir RL fuerza.
 
 \emph{\textbf{Examen:} Capítulo~14 (LLM Evaluación).}
 \end{questionbox}
@@ -30466,7 +30466,7 @@ El NLL término forma explícitamente el modelo para generar la respuesta ganado
 
 TRL: \texttt{loss\_type=["sigmoid", "sft"], loss\_weights=[1.0, 1.0]}
 
-\emph{\textbf{Examen:} Capítulos~8 y~13 (Optimización de preferencias Variantes; RL para los modelos de gran resonancia).}
+\emph{\textbf{Examen:} Capítulos~8 y~13 (Optimización de preferencias Variantes; RL para los modelos de razonamiento de gran tamaño).}
 \end{questionbox}
 
 \section{GPU Preguntas sobre Arquitectura y Hardware}
@@ -31269,7 +31269,7 @@ R = 0.5 \cdot R_{\text{tests}} + 0.2 \cdot R_{\text{quality}} + 0.2 \cdot R_{\te
   \item $R_{\text{safety}}$: No hay operaciones peligrosas (rm -rf, acceso a la red fuera de la caja de arena).
 \end{itemize}
 
-\textbf{Riesgos de piratería de recompensa}:
+\textbf{Riesgos de manipulación de la recompensa}:
 
 \begin{enumerate}
   \item \textbf{Salidas codificadas por hardware}: Agente aprende a imprimir salidas de prueba esperadas directamente sin computarlas. \emph{Fijar}: Entradas de prueba aleatorias; prueba de casos de retención.
@@ -31317,10 +31317,10 @@ P(\pi) = \prod_{i=1}^K \frac{e^{r(y_{\pi(i)})}}{\sum_{j=i}^K e^{r(y_{\pi(j)})}}
 
 \textbf{PRM anotación}: Puede automatizarse mediante el enfoque “Math-Shepherd”: para cada paso, complete la solución desde ese punto varias veces. Si las terminaciones desde el paso $t$ éxito pero las terminaciones de paso $t+1$ fracasar, paso $t+1$ Probablemente está mal..
 
-\emph{\textbf{Examen:} Capítulos~9 y~13 (Formación modelo de recompensa; RL para los modelos de gran resonancia).}
+\emph{\textbf{Examen:} Capítulos~9 y~13 (Formación modelo de recompensa; RL para los modelos de razonamiento de gran tamaño).}
 \end{questionbox}
 
-\section{RL para las preguntas de los modelos de gran resonancia}
+\section{RL para las preguntas de los modelos de razonamiento de gran tamaño}
 \label{rl-for-large-reasoning-models-questions}
 
 \begin{questionbox}[P: ¿Por qué lo hace DeepSeek-R1 no usa un modelo de recompensa de procesos a pesar de la formación en cadenas de razonamiento largas?]
@@ -31335,7 +31335,7 @@ P(\pi) = \prod_{i=1}^K \frac{e^{r(y_{\pi(i)})}}{\sum_{j=i}^K e^{r(y_{\pi(j)})}}
 
 \textbf{Información clave}: La verificabilidad del dominio de tarea es lo que hace PRMs innecesaria --- para tareas subjetivas (escritura creativa), las recompensas sólo de resultado pueden no bastar.
 
-\emph{\textbf{Examen:} Capítulo~13 (RL para los modelos de gran resonancia).}
+\emph{\textbf{Examen:} Capítulo~13 (RL para los modelos de razonamiento de gran tamaño).}
 \end{questionbox}
 
 \begin{questionbox}[P: Explicar la ley de escalado de tiempo de prueba y sus implicaciones para el despliegue de modelos]
@@ -31355,7 +31355,7 @@ P(\pi) = \prod_{i=1}^K \frac{e^{r(y_{\pi(i)})}}{\sum_{j=i}^K e^{r(y_{\pi(j)})}}
 
 \textbf{El fracaso “sobrepensando”}: Cadenas muy largas pueden \emph{disminución} precisión debido a la acumulación de errores y la dilución de la atención. Longitud de cadena óptima depende de dificultad de problema.
 
-\emph{\textbf{Examen:} Capítulo~13 (RL para los modelos de gran resonancia).}
+\emph{\textbf{Examen:} Capítulo~13 (RL para los modelos de razonamiento de gran tamaño).}
 \end{questionbox}
 
 \begin{questionbox}[Q: ¿Cómo funciona? MCTS (Monte Carlo Tree Buscar) aplicar a LLM razonamiento?]
@@ -31380,7 +31380,7 @@ P(\pi) = \prod_{i=1}^K \frac{e^{r(y_{\pi(i)})}}{\sum_{j=i}^K e^{r(y_{\pi(j)})}}
 
 \textbf{Usado por}: AlphaProof (olympiad de matemáticas, e hipotetizada para OpenAI o1/o3’s razonando oculto.
 
-\emph{\textbf{Examen:} Capítulo~13 (RL para los modelos de gran resonancia).}
+\emph{\textbf{Examen:} Capítulo~13 (RL para los modelos de razonamiento de gran tamaño).}
 \end{questionbox}
 
 \begin{questionbox}[Q: Compare la destilación vs directa RL para crear pequeños modelos de razonamiento]
@@ -31407,7 +31407,7 @@ P(\pi) = \prod_{i=1}^K \frac{e^{r(y_{\pi(i)})}}{\sum_{j=i}^K e^{r(y_{\pi(j)})}}
 
 \textbf{Prácticas óptimas}: Destilizar primero (tapa de referencia) y luego ejecutar de forma opcional RL sobre el modelo destilado para nuevas ganancias (“destruido + RL” combo utilizado por Qwen).
 
-\emph{\textbf{Examen:} Capítulo~13 (RL para los modelos de gran resonancia).}
+\emph{\textbf{Examen:} Capítulo~13 (RL para los modelos de razonamiento de gran tamaño).}
 \end{questionbox}
 
 \section{LLM Cuestiones de evaluación}
@@ -31930,7 +31930,7 @@ r_{\text{shaped}}(s, a, s') = r(s, a, s') + \gamma \Phi(s') - \Phi(s)
 \]
  Donde $\Phi(s) = -\text{min\_steps\_to\_goal}(s)$ (estimada por función de valor heurística o aprendida).
 
-\textbf{Desafíos}: La observabilidad parcial (no siempre puede decir si estás más cerca de la meta); entornos estocásticos (cambios de contenido de página); piratería de recompensa (el agente encuentra atajos que satisfacen la recompensa pero no la intención del usuario).
+\textbf{Desafíos}: La observabilidad parcial (no siempre puede decir si estás más cerca de la meta); entornos estocásticos (cambios de contenido de página); manipulación de la recompensa (el agente encuentra atajos que satisfacen la recompensa pero no la intención del usuario).
 
 \emph{\textbf{Examen:} Capítulos~12 y~19 (LLM Capacitación en materia de agentes; entornos).}
 \end{questionbox}
@@ -32160,7 +32160,7 @@ r_{\text{shaped}}(s, a, s') = r(s, a, s') + \gamma \Phi(s') - \Phi(s)
 \begin{questionbox}[Q: ¿Qué es la ingeniería contextual y por qué importa más que la ingeniería rápida para los bucles de larga duración?]
 \textbf{Respuesta}: \textbf{Ingeniería de prompt} optimiza el \emph{contenido} de un único sistema. \textbf{Ingeniería de contexto} optimización \emph{todo lo que llena la ventana contextual} a lo largo de toda la vida del bucle: el sistema de propulsión, conocimiento recuperado, definiciones de herramientas, historia de conversaciones, resultados intermedios y espacio de salida reservado.
 
-\textbf{Por qué importa más los bucles}: Un impulso de un solo giro tiene un contexto fijo. Un bucle acumula contexto con cada paso---herramientas salidas, mensajes de error, razonamiento intermedio, intentos de reingreso. Sin manejo activo, la ventana del contexto llena y degradaciones de calidad. El modelo comienza a "olvidar" las instrucciones tempranas, repetir acciones fallidas, o perder el seguimiento de la meta original.
+\textbf{Por qué importa más los bucles}: Un impulso de un solo giro tiene un contexto fijo. Un bucle acumula contexto con cada paso---herramientas salidas, mensajes de error, razonamiento intermedio, intentos de reingreso. Sin manejo activo, la ventana de contexto llena y degradaciones de calidad. El modelo comienza a "olvidar" las instrucciones tempranas, repetir acciones fallidas, o perder el seguimiento de la meta original.
 
 \textbf{La ecuación del presupuesto de contexto}:
 \[
@@ -32740,7 +32740,7 @@ Esta guía ha trazado el arco completo de las fundaciones transformadoras median
   \item \textbf{Los agentes son el siguiente paso natural.} Una vez alineado un modelo, la frontera cambia de “¿qué tan buena es una respuesta única?” a “¿puede el modelo resolver problemas multi-paso de forma autónoma?” Esto requiere nuevos paradigmas de entrenamiento (agentic RL con recompensas ambientales, formación de decisiones calibradas para una confianza fiable, destilación de arnés para hornear el andamio en pesos), nueva infraestructura (herramientas, protocolos de herramientas, sistemas de memoria), y nuevos métodos de evaluación (puntos de referencia a nivel de trayeccion).
   \item \textbf{La evaluación impulsa todo.} Sin una evaluación rigurosa---de la validación de modelos de recompensa a las tasas de éxito de la tarea de agente, de la detección de contaminación a LLM-as-Judge calibración---el progreso es inconmensurable y las regresiones son invisibles. Los puntos de referencia que usted elige moldean los sistemas que construye.
   \item \textbf{Escalas de simplicidad.} Los agentes de producción más fiables utilizan la arquitectura más simple que cumple con los requisitos---prompt encadenamiento y enrutamiento ante los bucles autónomos, agentes únicos antes de los enjambres multiagentes..
-  \item \textbf{La disciplina de ingeniería madura los sistemas de agentes.} La progresión de la ingeniería rápida a través de la gestión de contextos, arnés de agente, ingeniería de bucles y gráfica representa la maduración del diseño del sistema de agente. Cada capa añade estructura que hace que los sistemas sean más comprensibles, testables y composibles. Un gráfico bien diseñado ---con estado escrito, nodos de respuesta única, y bordes explícitos- es tan legible como un diagrama de flujo y tan testable como una función pura.
+  \item \textbf{La disciplina de ingeniería madura los sistemas de agentes.} La progresión de la ingeniería rápida a través de la gestión de contextos, entorno de ejecución del agente, ingeniería de bucles y gráfica representa la maduración del diseño del sistema de agente. Cada capa añade estructura que hace que los sistemas sean más comprensibles, testables y composibles. Un gráfico bien diseñado ---con estado escrito, nodos de respuesta única, y bordes explícitos- es tan legible como un diagrama de flujo y tan testable como una función pura.
 \end{enumerate}
 
 \section{La carretera de frente: Open Challenges}
@@ -32837,7 +32837,7 @@ Capítulo~14 mostró que los parámetros de referencia moldean los sistemas que 
 \subsection{Eficiencia y accesibilidad}
 \label{efficiency-and-accessibility}
 
-Formación de un modelo de 70B con RLHF Gastos $10K--$100K. Gastos de funcionamiento de los agentes autónomos $1--$50 por tarea compleja, para el agente AI para lograr un efecto amplio:
+Formación de un modelo de 70B con RLHF Gastos $10K--$100K. Gastos de funcionamiento de los agentes autónomos $1--$50 por tarea compleja, para el IA agéntica para lograr un efecto amplio:
 
 \begin{itemize}
   \item Destilación de las capacidades de agente de grandes a pequeños modelos~\cite{hinton2015distilling, kim2024distillation}.
@@ -32850,7 +32850,7 @@ Formación de un modelo de 70B con RLHF Gastos $10K--$100K. Gastos de funcionami
 \subsection{Medio ambiente normativo}
 \label{subsec:regulatory-environment}
 
-Agente AI los sistemas están cada vez más sujetos a la reglamentación oficial, añadiendo una nueva dimensión a las decisiones sobre el despliegue que en gran medida no se habían adoptado antes LLM despliegues.
+IA agéntica los sistemas están cada vez más sujetos a la reglamentación oficial, añadiendo una nueva dimensión a las decisiones sobre el despliegue que en gran medida no se habían adoptado antes LLM despliegues.
 
 \paragraph{EU AI Act (2024--2026).}
 El EU AI Act~\cite{euaiact2024}, que entró en vigor en agosto de 2024 con un plazo de cumplimiento gradual, clasifica AI los agentes autónomos que toman decisiones consiguientes en la contratación, crédito, salud o infraestructura crítica, en la \textbf{alto riesgo} y debe satisfacer los requisitos, incluyendo: evaluaciones de conformidad antes del despliegue, mecanismos de supervisión humana, registro de comportamiento del sistema para la auditoría posterior al trabajo, y registro en un EU Base de datos para fines generales AI modelos (GPAIs) con riesgo sistémico... en el futuro, aquellos que exceden $10^{25}$ FLOPs de formación de compute---face obligaciones adicionales incluyendo pruebas adversarias y reportajes de incidentes. Para los profesionales construir sistemas de agentes en o para EU mercado, el cumplimiento no es opcional: las penas alcanzan hasta 3\% de la escala de cuotas para el período de sesiones de la Asamblea General.
@@ -32898,7 +32898,7 @@ Los requisitos normativos no son puramente preocupaciones legales-- se traducen 
   \item \textbf{Atención Flash}~\cite{dao2022flashattention} --- IO-aware atención exacta.
 \end{itemize}
 
-\subsection{Agente AI}
+\subsection{IA agéntica}
 \label{agentic-ai}
 
 \begin{itemize}
