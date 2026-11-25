@@ -5,9 +5,9 @@ REQUIRED_FILES := README.md LICENSE ATTRIBUTION.md CHANGELOG.md Makefile \
 	docs/ARCHITECTURE.md docs/DECISIONS.md docs/QA_PROTOCOL.md \
 	reports/source-audit.md original/source-v3/INVENTORY.md original/source-v3/SHA256SUMS
 
-.PHONY: check check-files check-diff check-scope check-source
+.PHONY: check check-files check-diff check-scope check-source check-translation
 
-check: check-files check-diff check-scope check-source
+check: check-files check-diff check-scope check-source check-translation
 
 check-files:
 	@set -e; for file in $(REQUIRED_FILES); do \
@@ -19,12 +19,15 @@ check-files:
 
 # Preserve the original TeX bytes, including upstream whitespace.
 check-diff:
-	git diff --check HEAD -- . ':(exclude)original/source-v3/book.tex'
+	git diff --check HEAD -- . ':(exclude)original/source-v3/book.tex' \
+		':(exclude)translation/source-v3-es/book.tex'
 
 check-scope:
 	@set -e; files="$$(git ls-files --cached --others --exclude-standard -- \
 		original/ translation/ assets/ ':(icase,glob)**/*.pdf' \
-		':(exclude,glob)**/.gitkeep' ':(exclude)original/source-v3/')"; \
+		':(exclude,glob)**/.gitkeep' ':(exclude)original/source-v3/' \
+		':(exclude)translation/source-v3-es/' \
+		':(exclude)translation/glossary/v3-en-es.tsv')"; \
 	if [ -n "$$files" ]; then \
 		printf 'Archivos fuera de esta fase:\n%s\n' "$$files" >&2; \
 		exit 1; \
@@ -39,3 +42,6 @@ check-source:
 		printf 'El inventario de original/source-v3 no coincide con los archivos.\n' >&2; \
 		exit 1; \
 	fi
+
+check-translation:
+	python3 scripts/check-translation-v3.py

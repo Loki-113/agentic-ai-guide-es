@@ -4,6 +4,9 @@
 
 ### Añadido
 
+- Glosario castellano y proceso de traducción TeX por lotes con puntos
+  de control recuperables, marcas de revisión y validaciones de preservación.
+
 - Fuente TeX v3, inventario y manifiesto SHA-256 por archivo en
   `original/source-v3/`.
 

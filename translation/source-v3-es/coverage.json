@@ -1,0 +1,15 @@
+{
+  "changed_words": 4152,
+  "checkpoint_segments": 320,
+  "code": 1272,
+  "code_blocks": 206,
+  "editable_words": 167766,
+  "math": 4294,
+  "model_sha256": "d5771f823c9dd7eedcf9367c116aede65613a194f761a81826351e2bccb194c4",
+  "name": 9201,
+  "processed_words": 4289,
+  "protected": 3567,
+  "source_sha256": "c46a8e7a32704c54b057357ea9242ede76bb3525f3de0a60b81f278e64aeb586",
+  "syntax": 70524,
+  "todo_review": 28689
+}
