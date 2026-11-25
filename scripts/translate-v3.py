@@ -7,6 +7,7 @@ import json
 from pathlib import Path
 import re
 import sqlite3
+import unicodedata
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "original/source-v3/book.tex"
@@ -50,6 +51,12 @@ ARITY = {
     "fcolorbox": (False, False, True),
 }
 UNSAFE_OUTPUT = re.compile(r"[\\{}\[\]%$&#^_~\x00-\x1f]")
+TITLE_OVERRIDES = {
+    "The Hitchhiker's Guide to Agentic": "Guía del autoestopista sobre sistemas agénticos de",
+    "From Foundations to Systems": "De los fundamentos a los sistemas",
+    "Disclaimer": "Aviso legal",
+}
+SUPPORTED_PUNCTUATION = frozenset("‘’“”–—…¿¡§«»")
 WORD = re.compile(r"[^\W\d_]+", re.UNICODE)
 
 
@@ -208,6 +215,18 @@ def editable(text):
     return match.groups() if match else ("", "", "")
 
 
+def render_candidate(original, candidate, issue):
+    if original in TITLE_OVERRIDES:
+        return TITLE_OVERRIDES[original], ""
+    candidate = unicodedata.normalize("NFC", candidate)
+    for char in candidate:
+        if char.isascii() or char in original or char in SUPPORTED_PUNCTUATION:
+            continue
+        if not unicodedata.name(char, "").startswith("LATIN"):
+            return original, "salida Unicode incompatible con pdfLaTeX"
+    return candidate, issue
+
+
 def digest(path):
     return hashlib.file_digest(path.open("rb"), "sha256").hexdigest()
 
@@ -283,7 +302,7 @@ def main():
                 words = len(WORD.findall(core))
                 counts["editable_words"] += words
                 if core in saved:
-                    candidate, issue = saved[core]
+                    candidate, issue = render_candidate(core, *saved[core])
                     result = left + candidate + right
                     counts["processed_words"] += words
                     if candidate.casefold() != core.casefold():

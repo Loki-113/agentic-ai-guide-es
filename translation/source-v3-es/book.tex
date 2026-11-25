@@ -157,7 +157,7 @@
 \DeclareMathOperator{\rank}{rank}
 
 % --- Title ---
-\title{\textbf{Guía de Hitchhiker para la Agente AI}\\[0.5em]\Large De fundaciones a sistemas}
+\title{\textbf{Guía del autoestopista sobre sistemas agénticos de AI}\\[0.5em]\Large De los fundamentos a los sistemas}
 \author{Haggai Roitman}
 \date{2026}
 
@@ -166,9 +166,9 @@
 \begin{titlepage}
 \centering
 \vfill
-{\Huge\bfseries Guía de Hitchhiker para la Agente AI\par}
+{\Huge\bfseries Guía del autoestopista sobre sistemas agénticos de AI\par}
 \vspace{0.5cm}
-{\Large De fundaciones a sistemas\par}
+{\Large De los fundamentos a los sistemas\par}
 \vspace{2cm}
 \includegraphics[width=0.55\textwidth]{figures/hitchhiker_logo.jpg}\\[2cm]
 {\Large Haggai Roitman\par}
@@ -190,8 +190,8 @@ Un colega admirado e inspirador.}
 
 \tableofcontents
 
-\chapter*{Renuncia}
-\addcontentsline{toc}{chapter}{Renuncia}
+\chapter*{Aviso legal}
+\addcontentsline{toc}{chapter}{Aviso legal}
 \label{disclaimer}
 
 Este documento es un estudio independiente y un recurso educativo preparado únicamente por el autor. Las opiniones, opiniones y conclusiones expresadas en este documento son las del autor por sí solo y no reflejan necesariamente las opiniones de ningún empleador, organización o institución con la que el autor está o ha sido afiliado..
@@ -1064,7 +1064,7 @@ Antes de sumergirse en detalles arquitectónicos, construyamos intuición para c
 
 \begin{keybox}[Las cuatro etapas clave]
 \begin{enumerate}
-  \item \textbf{Tokenization}: El texto crudo se divide en piezas subpalabras (no caracteres, no palabras completas) usando un vocabulario aprendido. “la felicidad” podría convertirse en [“"felicidad"”] o [“, , ̈”].
+  \item \textbf{Tokenization}: El texto crudo se divide en piezas subpalabras (no caracteres, no palabras completas) usando un vocabulario aprendido. “la felicidad” podría convertirse en [“"felicidad"”] o [“unhapp”, “iness”].
   \item \textbf{Representación vectorial}: Cada ficha ID índices en una tabla de embedding aprendida, produciendo un vector denso $\mathbb{R}^d$ (típicamente $d = 4096$). Estos vectores capturan significado semántico--- palabras similares consiguen vectores similares.
   \item \textbf{Procesamiento contextual}: El pilar transformador procesa todas las incrustaciones en paralelo, utilizando la autoatención para permitir que cada posición “lee” de todas las otras posiciones. Después $L$ capas, el estado oculto de cada posición codifica información contextual rica.
   \item \textbf{Predicción}: El estado oculto final se proyecta a una distribución de probabilidad sobre el vocabulario completo, y una estrategia de decodificación selecciona el siguiente token.

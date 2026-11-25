@@ -1,8 +1,6 @@
 línea_fuente	marca	motivo
 178	TODO-REVIEW	fragmento breve sin contexto
 185	TODO-REVIEW	sin cambio; comprobar término o nombre
-193	TODO-REVIEW	fragmento breve sin contexto
-194	TODO-REVIEW	fragmento breve sin contexto
 203	TODO-REVIEW	fragmento breve sin contexto
 205	TODO-REVIEW	fragmento breve sin contexto
 207	TODO-REVIEW	fragmento breve sin contexto
@@ -337,7 +335,7 @@ línea_fuente	marca	motivo
 1067	TODO-REVIEW	sin cambio; comprobar término o nombre
 1067	TODO-REVIEW	fragmento breve sin contexto
 1067	TODO-REVIEW	fragmento breve sin contexto
-1067	TODO-REVIEW	fragmento breve sin contexto
+1067	TODO-REVIEW	salida Unicode incompatible con pdfLaTeX
 1068	TODO-REVIEW	fragmento breve sin contexto
 1068	TODO-REVIEW	comprobar término del glosario
 1068	TODO-REVIEW	comprobar término del glosario
