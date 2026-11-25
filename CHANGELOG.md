@@ -23,6 +23,10 @@
 
 ### Actualizado
 
+- Prepublicación v3.2 con siete correcciones técnicas puntuales, ajuste
+  de tablas del PDF, compatibilidad EPUB y auditorías de derechos y
+  privacidad. La apertura sigue bloqueada.
+
 - Preparación de publicación v3.1 con licencia oficial, atribución en
   PDF y EPUB, inventario de derechos y auditoría de privacidad.
 

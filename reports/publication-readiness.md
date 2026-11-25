@@ -1,157 +1,147 @@
-# Preparación para publicación pública
+# Preparación final para publicación pública
 
-25 de noviembre de 2026. Auditoría de la base
-`5d81cf16752dc966f1764ad6d1bbebfc7a8e9498` y de los archivos
-preparados para la adaptación castellana v3.1.
+25 de noviembre de 2026. Base obligatoria
+`58682e0502d704cf596b55b9e7beb7d1e9b20240`. Adaptación castellana v3.2
+de arXiv:2606.24937v3, edición 1.4.
 
-## Estado general — NO APTO
+## Estado general — BLOQUEADO POR DERECHOS
 
-La licencia y la atribución están documentadas. La apertura sigue
-bloqueada por los derechos de recursos redistribuidos pendientes de
-verificación y por datos de autoría del historial cuya publicación
-requiere decisión expresa. El repositorio conserva su visibilidad
-privada y carece de una nueva release.
+También queda un bloqueo de privacidad. Se completó la preparación
+técnica de los artefactos para revisión interna. No se autorizó la
+redistribución pública de los elementos pendientes. El repositorio
+sigue privado y carece de una nueva release.
 
-## Licencia principal
+## Licencia y atribución
 
-`LICENSE` contiene el texto íntegro oficial de Creative Commons
-Attribution-ShareAlike 4.0 International. Se normalizó únicamente la
-línea en blanco final del archivo descargado.
-[Texto en el repositorio](../LICENSE) ·
-[Texto oficial](https://creativecommons.org/licenses/by-sa/4.0/legalcode) ·
-[Licencia en castellano](https://creativecommons.org/licenses/by-sa/4.0/deed.es)
+`LICENSE` coincide con el texto oficial de CC BY-SA 4.0, con
+normalización de la línea en blanco final. README, ATTRIBUTION, PDF
+y EPUB identifican a Haggai Roitman, el título original, arXiv, la
+edición, la fecha, el original y el Proyecto AGENTIC AI. Documentan
+la traducción, los cambios y la adaptación de formato con aviso de
+traducción no oficial y ausencia de aprobación o respaldo del autor.
+La obra derivada usa CC BY-SA 4.0. MIT aplica al código complementario
+referenciado del autor. Los artefactos carecen de DRM.
+[Licencia](../LICENSE) · [Atribución](../ATTRIBUTION.md) ·
+[Texto oficial](https://creativecommons.org/licenses/by-sa/4.0/legalcode)
 
-## Atribución
+## Derechos de terceros
 
-README, atribución y formatos de lectura identifican a Haggai Roitman,
-el título de la obra, la edición 1.4 del 29 de septiembre de 2026,
-arXiv:2606.24937v3, el Proyecto AGENTIC AI y el repositorio castellano.
-La adaptación registra los cambios de idioma, revisión y formato,
-con un aviso expreso de traducción no oficial y ausencia de revisión,
-aprobación o respaldo del autor. [Atribución](../ATTRIBUTION.md) ·
-[Ficha oficial](https://arxiv.org/abs/2606.24937v3)
+Los 901 registros se clasificaron por evidencia y uso. Quedan
+393 elementos NO IDENTIFICADO y uno PERMISO NECESARIO. Incluyen los
+70 gráficos, con el logotipo, los cinco TikZ, las 113 tablas y los
+206 bloques de código o literales. Hay indicios de procedencia para
+la figura del Transformer y la visualización de LangGraph Studio,
+sin permiso verificable para las copias. No se sustituyeron recursos
+por materiales de origen incierto.
 
-## ShareAlike
+Se confirmó que las fuentes AMS Type 1 embebidas usan SIL OFL 1.1,
+que permite la incrustación en documentos. Se conservaron las
+referencias a GUST para Latin Modern. No se incorporaron notebooks
+ni binarios tipográficos independientes. [Auditoría](rights-audit.md) ·
+[Inventario](rights-inventory.tsv)
 
-La obra derivada se identifica como CC BY-SA 4.0 en la documentación
-y en los formatos de lectura. El PDF carece de cifrado y el paquete
-EPUB carece de archivos de cifrado o DRM. Los derechos de terceros se
-mantienen por separado. La licencia MIT del código complementario
-se documenta exclusivamente para ese código.
+## Privacidad y seguridad
 
-## Recursos de terceros
+El dominio del contacto de ejemplo tiene resolución A/AAAA y no es
+reservado. La identidad del buzón y el permiso de publicación quedan
+PENDIENTES. Se comprobó que el valor aparece en los dos TeX y en
+los artefactos de lectura. Figura en un bloque de código preservado
+y en el original inmutable. Siguen pendientes de autorización las
+entradas de correo de autoría y committer de 11 commits históricos.
+Los valores se omiten y el historial se conserva.
+[Ubicaciones y commits afectados](privacy-audit.md)
 
-El inventario registra 70 archivos gráficos, 5 diagramas TikZ,
-113 tablas, 206 bloques de código o literales, 468 fichas
-bibliográficas, 37 nombres tipográficos y dos grupos de recursos
-complementarios referenciados. Las obras citadas solo se referencian.
-Los notebooks del autor siguen sin incorporarse.
-
-Los derechos individuales de las figuras, el logotipo, los diagramas,
-las tablas y los fragmentos de código quedan PENDIENTES. Latin Modern
-se identificó bajo GUST Font License en el paquete instalado. Queda
-PENDIENTE la comprobación específica de los subconjuntos AMS embebidos
-y de los avisos de redistribución. [Auditoría](rights-audit.md) ·
-[Inventario por recurso](rights-inventory.tsv)
+El escaneo por patrones cubrió 159 blobs históricos alcanzables y el
+diff preparado, incluidos scripts, configuraciones, informes, texto
+y metadatos de los PDF y EPUB, y checkpoints comprimidos. No detectó
+secretos ni rutas privadas del entorno dentro de ese alcance.
+El análisis por patrones no garantiza detectar valores de baja
+entropía ni datos incluidos únicamente en imágenes.
 
 ## PDF y EPUB
 
-El PDF tiene 771 páginas. Se añadió una hoja legal inicial y se
-actualizaron los metadatos a partir del PDF compilado del TeX revisado.
-El texto extraído con la opción de maquetación de las otras 770
-páginas coincide exactamente con el PDF compilado anterior.
+- **PDF de 767 páginas.** Se inspeccionaron 12 páginas, incluida la
+  hoja legal, la portada, el índice y pasajes iniciales, intermedios y
+  finales con tablas, fórmulas, diagramas y pies. Se detectó un
+  desbordamiento visible en la tabla de tokenización y se limitó el
+  ancho de 108 tablas en una copia de compilación. La muestra revisada
+  muestra la tabla dentro del ancho disponible. No se cambió el
+  contenido técnico mediante esta transformación. Las referencias
+  internas y las citas resuelven. Los 26 avisos de etiquetas duplicadas
+  son heredados.
+- **EPUB 3 con 48 secciones XHTML de lectura y 50 documentos XHTML en
+  total.** Se inspeccionó visualmente una muestra con MuPDF. Se
+  cambiaron un selector CSS y 196 atributos de estilo inválidos
+  generados en la exportación. Las siete vistas de comprobación
+  posteriores se renderizaron sin los avisos detectados. Hay 4.504
+  elementos MathML, 70 imágenes y cero enlaces internos rotos.
+  La equivalencia visual de todos los diagramas TikZ y tablas en
+  distintos lectores queda PENDIENTE.
 
-El EPUB 3 se regeneró a partir del mismo TeX, con información legal,
-metadatos y preparación de anclas de exportación. Se sustituyó la
-sintaxis de dimensionado de delimitadores de una copia temporal por
-la equivalente admitida por el conversor. El EPUB pasó los controles
-de estructura ZIP, XML, manifiesto, navegación, imágenes y enlaces
-internos. Contiene 4.504 elementos MathML, 70 imágenes y 0 enlaces
-internos rotos. El conversor terminó sin advertencias matemáticas.
-La equivalencia visual de tablas y diagramas en lectores concretos
-queda PENDIENTE. [PDF](artifacts/agentic-ai-guide-es-v3-review.pdf) ·
-[EPUB](artifacts/agentic-ai-guide-es-v3-review.epub)
+El PDF y el EPUB proceden del TeX corregido v3.2. Ambos incluyen
+atribución visible, enlaces a la fuente y licencia, y metadatos de
+título, autor y edición. El EPUB usa MathML sin fallback de TeX
+notificado por el conversor.
+[PDF](artifacts/agentic-ai-guide-es-v3-review.pdf) ·
+[EPUB](artifacts/agentic-ai-guide-es-v3-review.epub) ·
+[SHA-256](artifacts/SHA256SUMS.txt)
 
-## Seguridad y privacidad
+## Revisión de traducción
 
-El análisis por patrones examinó los archivos actuales, el contenido
-textual extraíble de PDF y EPUB, los checkpoints SQLite comprimidos y
-145 blobs de los 11 commits alcanzables desde la base auditada. Se
-buscaron formatos comunes de tokens, claves de proveedor, secretos
-asignados, credenciales en URLs, claves privadas, certificados y rutas
-del entorno de trabajo. No se detectaron secretos ni rutas privadas
-del entorno en el alcance y con los patrones aplicados. Este resultado
-no sustituye una comprobación exhaustiva de datos de baja entropía,
-imágenes o metadatos de terceros.
+Se corrigieron siete P1 inequívocos contrastados con el original.
+Se conservaron los 206 bloques de código, las fórmulas, los comandos
+y las referencias. Quedan 13.265 marcas documentadas (2.862 P1 y
+10.403 P2), y ninguna P0 automática abierta. Las marcas de traducción
+no se confunden con los bloqueos de publicación.
+[Informe de revisión](review-report.md)
 
-Los metadatos de autor y committer contienen 22 entradas de correo
-ajenas al formato no-reply repartidas entre los 11 commits previos,
-con valores omitidos. Su autorización para exposición pública queda
-PENDIENTE. En el TeX, el contacto de la línea 203 es una plantilla y
-el de la línea 27346 aparece en un ejemplo con dominio no reservado.
-La condición ficticia o la autorización del segundo se debe confirmar
-antes de abrir. Los otros ejemplos de correo usan dominios reservados.
-Las rutas absolutas de ejemplos del original se distinguieron de las
-rutas de ejecución del proyecto.
-
-Se añadió `.gitignore` para auxiliares, cachés y archivos de entorno.
-Los artefactos versionados incluyen el checkpoint reproducible y
-las copias finales destinadas a revisión. El nuevo commit usa una
-identidad no-reply y preserva el historial.
-
-## Integridad de archivos
-
-El árbol de la fuente original y el TeX traducido conservan sus
-bytes. Se verificaron los manifiestos de origen y traducción, los
-hashes de los artefactos y los enlaces internos de la documentación.
-Los dos PDF del repositorio contienen los mismos bytes.
-[Hashes de distribución](artifacts/SHA256SUMS.txt) ·
-[Hashes de traducción](../translation/source-v3-es/SHA256SUMS)
-
-## Incidencias pendientes
+## Incidencias abiertas de publicación
 
 | Prioridad | Número | Incidencias |
 | --- | ---: | --- |
-| P0 | 2 | Confirmación de derechos de redistribución de terceros. Autorización de exposición de correos del historial y del contacto de ejemplo sin dominio reservado. |
-| P1 | 2 | Evidencia individual de créditos y licencias del inventario. Evidencia de licencia y avisos de los subconjuntos AMS embebidos. |
-| P2 | 2 | Pruebas visuales de tablas y diagramas del EPUB. Revisión editorial y de maquetación del borrador. |
+| P0 | 2 | Derechos de redistribución de recursos individuales. Autorización de los datos de contacto del historial y del ejemplo reproducido. |
+| P1 | 2 | Completar evidencia y créditos por recurso. Comprobar equivalencia en lectores EPUB, en especial de diagramas y tablas. |
+| P2 | 2 | Revisar redacción y fluidez del borrador. Revisar maquetación restante en casos no cubiertos por la muestra. |
 
-Los grupos P1 de derechos aportan evidencia para cerrar el primer P0.
-Las incidencias de traducción y los informes de la fase anterior
-conservan su registro.
+## Acciones antes de abrir el repositorio
 
-## Acciones necesarias antes de hacerlo público
+1. Confirmar licencias, atribuciones y permisos de los 394 elementos
+   pendientes. Si un recurso no se puede distribuir, el propietario
+   debe aprobar su sustitución, su exclusión de un paquete público
+   separado o la conservación del proyecto en privado.
+2. Obtener confirmación verificable sobre la publicación de los
+   contactos históricos y del ejemplo. Si no hay autorización,
+   el propietario debe aprobar una referencia pública saneada.
+   Cualquier cambio del original o reescritura del historial requiere
+   autorización expresa adicional.
+3. Repetir el escaneo de la referencia que vaya a abrirse y comprobar
+   las tablas y los diagramas en los lectores EPUB previstos. Mantener
+   identificada la versión como traducción de trabajo.
 
-1. Confirmar autoría, licencia, crédito y autorización de cada
-   figura, logotipo, diagrama, tabla y fragmento redistribuido.
-   Registrar pruebas o acordar el tratamiento de cualquier recurso
-   que no tenga permiso suficiente.
-2. Verificar las licencias y avisos de las fuentes AMS y los
-   subconjuntos tipográficos embebidos. Incorporar los avisos
-   exigidos antes de redistribuir.
-3. Confirmar si puede exponerse el historial con los correos existentes
-   y comprobar el carácter ficticio o autorizado del contacto de
-   ejemplo. Si hiciera falta sanear esos datos, acordar el alcance
-   antes de modificar la fuente o reescribir el historial.
-4. Repetir el escaneo de privacidad y secretos sobre la referencia
-   que vaya a hacerse pública y comprobar la visualización del EPUB
-   en lectores objetivo. Mantener los artefactos identificados como
-   borrador mientras siga pendiente la revisión editorial.
+## Validaciones y alcance
+
+Se comprobó `make check`, `git diff --check`, los archivos
+obligatorios, los enlaces internos y los manifiestos de integridad.
+La fuente original conserva sus bytes. El cambio de TeX se limita
+a siete correcciones contrastadas. Las reglas de `.gitignore`
+cubren los auxiliares, y no se añadieron archivos temporales.
 
 ## Archivos modificados o añadidos
 
-- `.gitattributes`
-- `.gitignore`
 - `ATTRIBUTION.md`
 - `CHANGELOG.md`
-- `LICENSE`
 - `README.md`
 - `docs/STATUS.md`
 - `reports/artifacts/SHA256SUMS.txt`
 - `reports/artifacts/agentic-ai-guide-es-v3-review.epub`
 - `reports/artifacts/agentic-ai-guide-es-v3-review.pdf`
+- `reports/privacy-audit.md`
 - `reports/publication-readiness.md`
+- `reports/review-report.md`
 - `reports/rights-audit.md`
 - `reports/rights-inventory.tsv`
+- `scripts/prepare-pdf-layout-v3.py`
 - `translation/source-v3-es/SHA256SUMS`
 - `translation/source-v3-es/book-es.pdf`
+- `translation/source-v3-es/book.tex`
+- `translation/source-v3-es/review-edits.tsv`

@@ -63,3 +63,10 @@ línea_fuente	prioridad	original_borrador	reemplazo	motivo
 32840	P1	agente AI	IA agéntica	agentic AI
 32853	P1	Agente AI	IA agéntica	agentic AI
 32901	P1	Agente AI	IA agéntica	agentic AI
+4027	P1	Consultas de resonancias	Consultas de razonamiento atento	reasoning
+7213	P1	Optimización de la preferencia por razones de resonancia	Optimización de preferencias de razonamiento	reasoning
+7251	P1	Tareas de resonancia (mata, código, lógica)	Tareas de razonamiento (matemáticas, código, lógica)	reasoning
+7342	P1	Tareas de resonancia	Tareas de razonamiento	reasoning
+12836	P1	Las cadenas de resonancia pueden abarcar cientos a miles de fichas	Las cadenas de razonamiento pueden abarcar entre cientos y miles de tokens	reasoning
+13208	P1	Buscador de haz sobre pasos de resonancia	Búsqueda en haz sobre pasos de razonamiento	reasoning
+32163	P1	Un impulso de un solo giro	Un prompt de un solo turno	prompt

@@ -89,3 +89,18 @@ derechos por recurso requieren revisión editorial.
 
 [PDF revisado](../translation/source-v3-es/book-es.pdf) ·
 [Manifiesto SHA-256](../translation/source-v3-es/SHA256SUMS)
+
+## Cierre técnico v3.2
+
+Se volvió a cribar la lista de 13.265 marcas y se contrastaron siete
+correcciones P1 con los pasajes correspondientes del original.
+Se corrigieron seis traducciones de *reasoning* y una de *prompt*.
+Las marcas anteriores no siempre identifican el fragmento exacto de
+la línea, por lo que se conservaron las 2.862 P1 y las 10.403 P2. Hacer
+estas correcciones no generó ninguna marca P0 nueva.
+
+El PDF v3.2 tiene 767 páginas con la hoja legal. Se limitó el ancho de
+108 tablas en una copia de compilación. El TeX de edición conserva
+los comandos. El PDF se regeneró desde la fuente
+corregida. El EPUB v3.2 se regeneró desde la misma fuente, con dos
+ajustes de compatibilidad CSS. [Informe final](publication-readiness.md)

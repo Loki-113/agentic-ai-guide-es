@@ -4024,7 +4024,7 @@ En lugar de los impulsos de fabricación manual, los recientes automatizaciones 
   \item \textbf{OPRO}~\cite{yang2024large}: Treats optimización rápida como un problema de optimización, utilizando un LLM como optimizador.
 \end{itemize}
 
-\paragraph{Consultas de resonancias (ARQ).}
+\paragraph{Consultas de razonamiento atento (ARQ).}
 \label{attentive-reasoning-queries-arq.}
 
 ARQ~\cite{yang2025arq} aborda una debilidad fundamental de la orientación estándar: a medida que crece la longitud del contexto, los modelos cada vez más “siguen” la información crítica en medio del impulso (el \emph{perdido en medio} efecto). ARQ mitiga esto descomponiendo una compleja consulta en múltiples sub-queries enfocadas, cada una diseñada para dirigir la atención del modelo a una parte específica del contexto:
@@ -7210,7 +7210,7 @@ trainer = DPOTrainer(
 \end{lstlisting}
 \end{examplebox}
 
-\subsection{Iterative RPO -- Optimización de la preferencia por razones de resonancia}
+\subsection{Iterative RPO -- Optimización de preferencias de razonamiento}
 \label{sec:rpo}
 
 \begin{intuitionbox}[DPO Olvídate de cómo generar]
@@ -7248,7 +7248,7 @@ trainer = DPOTrainer(
 
 \begin{keybox}[Cuándo utilizar RPO]
 \begin{itemize}
-  \item Tareas de resonancia (mata, código, lógica) donde el modelo debe generar soluciones paso a paso.
+  \item Tareas de razonamiento (matemáticas, código, lógica) donde el modelo debe generar soluciones paso a paso.
   \item Cuando DPO entrenamiento hace que el modelo pierda fluidez o calidad de generación.
   \item Gasoductos iterativos: generar rollos, etiquetarlos, tren con RPO, repetición.
   \item El NLL el término actúa como un regularizador, impidiendo que la política se colapse.
@@ -7339,7 +7339,7 @@ El GAS La salida del asesor debe seguir un formato estructurado (recomendación,
 GRPO es preferido sobre PPO para el GAS porque: (1) no función de valor para entrenar (instalación de los simpos); (2) recompensas relacionadas con grupos naturalmente manejan el ajuste de recomendación multicandidato; (3) la Crítico de Seguridad proporciona una señal de recompensa escalar confiable que funciona bien con GRPO's normalisation. El cuaderno de capítulos muestra ambos algoritmos en la misma tarea para la comparación directa.
 \end{keybox}
 \begin{itemize}
-  \item \textbf{Tareas de resonancia} con recompensas verificables (math, code) donde la corrección binaria proporciona una señal limpia.
+  \item \textbf{Tareas de razonamiento} con recompensas verificables (math, code) donde la corrección binaria proporciona una señal limpia.
   \item \textbf{Modelos grandes} (70B+) donde los ahorros de memoria de la eliminación del crítico son críticos.
   \item \textbf{Ajustes multi-torno y agentes} donde la estimación de valor entre las llamadas de herramientas es intráctil.
 \end{itemize}
@@ -12833,7 +12833,7 @@ Estándar RLHF (Sección~\ref{the-rlhf-pipeline}) optimiza una sola recompensa e
 
 \begin{itemize}
   \item \textbf{Recompensas de la basura}: Un problema matemático puede requerir 20 pasos intermedios; una recompensa de resultado única no proporciona señal gradiente para los pasos intermedios que llevaron a un error.
-  \item \textbf{Los horizontes largos}: Las cadenas de resonancia pueden abarcar cientos a miles de fichas, creando problemas graves de asignación de crédito.
+  \item \textbf{Los horizontes largos}: Las cadenas de razonamiento pueden abarcar entre cientos y miles de tokens, creando problemas graves de asignación de crédito.
   \item \textbf{Búsqueda combinada}: El espacio de caminos de razonamiento válidos es exponencialmente grande; el modelo debe aprender a buscar este espacio de manera eficiente.
   \item \textbf{Verificación}: A diferencia de la calidad subjetiva del texto, la corrección matemática y lógica es objetivamente verificable, permitiendo la computación automatizada de recompensa sin anotación humana.
 \end{itemize}
@@ -13205,7 +13205,7 @@ Mejor & Problemas de ramificación simple (24 juego) & Problemas complejos que r
 \end{tabular}
 \end{table}
 
-\subsection{Buscador de haz sobre pasos de resonancia}
+\subsection{Búsqueda en haz sobre pasos de razonamiento}
 \label{subsec:beam_reasoning}
 
 Buscador de haz --- largo estándar en NMT y la generación de texto --- se puede aplicar en \emph{paso de razonamiento} nivel en lugar del nivel de fichas. En lugar de seguir la parte superior-$k$ secuencias de token, rastreamos la parte superior-$k$ \textbf{razonando prefijos}:
@@ -32160,7 +32160,7 @@ r_{\text{shaped}}(s, a, s') = r(s, a, s') + \gamma \Phi(s') - \Phi(s)
 \begin{questionbox}[Q: ¿Qué es la ingeniería contextual y por qué importa más que la ingeniería rápida para los bucles de larga duración?]
 \textbf{Respuesta}: \textbf{Ingeniería de prompt} optimiza el \emph{contenido} de un único sistema. \textbf{Ingeniería de contexto} optimización \emph{todo lo que llena la ventana contextual} a lo largo de toda la vida del bucle: el sistema de propulsión, conocimiento recuperado, definiciones de herramientas, historia de conversaciones, resultados intermedios y espacio de salida reservado.
 
-\textbf{Por qué importa más los bucles}: Un impulso de un solo giro tiene un contexto fijo. Un bucle acumula contexto con cada paso---herramientas salidas, mensajes de error, razonamiento intermedio, intentos de reingreso. Sin manejo activo, la ventana de contexto llena y degradaciones de calidad. El modelo comienza a "olvidar" las instrucciones tempranas, repetir acciones fallidas, o perder el seguimiento de la meta original.
+\textbf{Por qué importa más los bucles}: Un prompt de un solo turno tiene un contexto fijo. Un bucle acumula contexto con cada paso---herramientas salidas, mensajes de error, razonamiento intermedio, intentos de reingreso. Sin manejo activo, la ventana de contexto llena y degradaciones de calidad. El modelo comienza a "olvidar" las instrucciones tempranas, repetir acciones fallidas, o perder el seguimiento de la meta original.
 
 \textbf{La ecuación del presupuesto de contexto}:
 \[

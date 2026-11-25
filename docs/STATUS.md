@@ -12,8 +12,8 @@ Actualizado el 25 de noviembre de 2026.
 | Adquisición local de TeX v3 | Fuente oficial reproducible; hash local registrado; ETag no equivalente a SHA-256. [Inventario](../original/source-v3/INVENTORY.md). |
 | Compilación local | Correcta sin modificar el TeX. PDF de 733 páginas. Incidencias no bloqueantes de 26 referencias duplicadas y 2 campos bibliográficos vacíos. |
 | Traducción y glosario | Borrador castellano con revisión automática completada. [Borrador y glosario](../translation/source-v3-es/README.md). |
-| Revisión automática | 1 P0 y 63 P1 corregidos. Quedan 13.265 marcas. [Informe](../reports/review-report.md). |
-| Publicación | NO APTO para abrir el repositorio. [Informe](../reports/publication-readiness.md). |
+| Revisión automática | 1 P0 y 70 P1 corregidos en total. Quedan 13.265 marcas. [Informe](../reports/review-report.md). |
+| Publicación | BLOQUEADO POR DERECHOS. Privacidad del historial pendiente. [Informe](../reports/publication-readiness.md). |
 
 El borrador queda pendiente de revisión técnica y lingüística. La
 [atribución](../ATTRIBUTION.md) está documentada. La apertura sigue

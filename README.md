@@ -25,7 +25,7 @@ y el [registro de cambios](CHANGELOG.md).
 
 ## Edición en castellano
 
-**Guía del autoestopista sobre sistemas agénticos de IA**, versión v3.1
+**Guía del autoestopista sobre sistemas agénticos de IA**, versión v3.2
 del Proyecto AGENTIC AI. Traducción y adaptación de formato no oficiales
 de *The Hitchhiker’s Guide to Agentic AI: From Foundations to Systems*,
 de Haggai Roitman, arXiv:2606.24937v3, edición 1.4 del 29 de septiembre

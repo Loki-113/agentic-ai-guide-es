@@ -7,7 +7,7 @@
 | Referencia | arXiv:2606.24937v3, edición 1.4, 29 de septiembre de 2026 |
 | Original | [Ficha y fuente oficial](https://arxiv.org/abs/2606.24937v3) |
 | Licencia de la obra y de la traducción | [CC BY-SA 4.0 Internacional](https://creativecommons.org/licenses/by-sa/4.0/) |
-| Adaptación castellana | Proyecto AGENTIC AI, versión v3.1, [repositorio español](https://github.com/Loki-113/agentic-ai-guide-es) |
+| Adaptación castellana | Proyecto AGENTIC AI, versión v3.2, [repositorio español](https://github.com/Loki-113/agentic-ai-guide-es) |
 
 Esta es una traducción no oficial al castellano de la obra de Haggai
 Roitman. No ha sido revisada ni aprobada por el autor original. La
