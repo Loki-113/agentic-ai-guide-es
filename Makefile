@@ -27,7 +27,8 @@ check-scope:
 		original/ translation/ assets/ ':(icase,glob)**/*.pdf' \
 		':(exclude,glob)**/.gitkeep' ':(exclude)original/source-v3/' \
 		':(exclude)translation/source-v3-es/' \
-		':(exclude)translation/glossary/v3-en-es.tsv')"; \
+		':(exclude)translation/glossary/v3-en-es.tsv' \
+		':(exclude)reports/artifacts/agentic-ai-guide-es-v3-review.pdf')"; \
 	if [ -n "$$files" ]; then \
 		printf 'Archivos fuera de esta fase:\n%s\n' "$$files" >&2; \
 		exit 1; \
